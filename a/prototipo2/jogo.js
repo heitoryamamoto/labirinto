@@ -8,13 +8,13 @@ var mapa = [
     [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 6, 1, 0, 0, 0, 0, 1],
     [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 0, 1, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 0, 1, 0, 5, 0, 1, 0, 1, 0, 0, 1],
+    [1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1],
     [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 1],
-    [1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 2, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 var bonecoL = 7
@@ -73,12 +73,19 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[11][2] == 8) {
+        else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[2][9] == 8) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoC--
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[11][2] == 7) {
             mapa[bonecoL][bonecoC] = 6
             bonecoC--
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+
 
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
             mapa[bonecoL][bonecoC] = 4
@@ -185,7 +192,7 @@ window.onload = (function jogar() {
                 document.getElementById("parede").innerHTML += "@ "
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<span style='color: lightblue'>" + "& " + "</span>";
+                document.getElementById("parede").innerHTML += "style=color: lightblue>" + "& ";
             }
             if (mapa[i][j] == 6) {
                 document.getElementById("parede").innerHTML += "@ "
