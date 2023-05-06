@@ -11,9 +11,9 @@ var mapa = [
     [1, 0, 1, 1, 0, 1, 0, 5, 0, 1, 0, 1, 0, 0, 1],
     [1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 1],
-    [1, 0, 2, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+    [1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 4, 0, 0, 0, 1],
+    [1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1],
     [1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
@@ -55,7 +55,9 @@ window.addEventListener("keydown", function andar(event) {
             bonecoC++
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            window.location.replace("mapa2.html")
         }
+
         else {
 
             mapa[bonecoL][bonecoC] = 0
@@ -105,6 +107,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
