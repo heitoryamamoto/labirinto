@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
 </head>
-<script src="jogo.js"></script>
+<script src="mapa1.js"></script>
 <script src="sair.js"></script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -47,11 +47,20 @@
     #rodada {
         position: relative;
         top: 30px;
+        left: -40px;
         font-family: 'Press Start 2P', cursive;
-        color: lime;
+        font-size: 30px;
+        color: red;
         text-shadow: 1px 1px 5px black;
 
     }
+
+    #vida1 {
+        margin-left: 240px;
+        box-shadow: 1px 1px 2px black;
+
+    }
+
 
     html {
         zoom: 130%;
@@ -62,6 +71,9 @@
     <div id="cardjogo">
         <div style="height: 7vh;">
             <div id="rodada">Fase 1</div>
+            <img id="vida1" src="imagem/vida.png" width="30px">
+            <img style="box-shadow: 1px 1px 5px black;" id="vida2" src="imagem/vida.png" width="30px">
+            <img style="box-shadow: 1px 1px 5px black;" id="vida3" src="imagem/vida.png" width="30px">
         </div>
         <pre><div id="boneco"></div></pre> <br>
         <pre><div id="parede"></div></pre>
