@@ -186,25 +186,25 @@ window.onload = (function jogar() {
                 document.getElementById("parede").innerHTML += "* "
             }
             if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "D "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
             }
             if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "D "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
         } document.getElementById("parede").innerHTML += "<br>"
     }
@@ -224,25 +224,25 @@ function movimento() {
                 document.getElementById("parede").innerHTML += "* "
             }
             if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "D "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
             }
             if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "D "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
 
         } document.getElementById("parede").innerHTML += "<br>"
@@ -274,13 +274,13 @@ function chavePorta1() {
                 mapa[10][10] = 0
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
 
 
@@ -315,17 +315,17 @@ function chavePorta2() {
                 mapa[10][10] = 0
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
             }
             if (mapa[i][j] == 6) {
                 mapa[5][8] = 0
 
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
 
 
