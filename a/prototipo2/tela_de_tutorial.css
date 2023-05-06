@@ -23,9 +23,11 @@
   font-family: inherit;
   font-weight: 500;
   color: blue;
-  background-color: white;
+  background-color: whitesmoke;
   width: 250px;
   box-shadow: 5px 5px 5px black;
+  text-shadow: 1px 3px 2px black;
+
 }
 
 .botao0:hover {
@@ -73,9 +75,10 @@
   font-family: inherit;
   font-weight: 500;
   color: lime;
-  background-color: white;
+  background-color: whitesmoke;
   width: 250px;
   box-shadow: 5px 5px 5px black;
+  text-shadow: 1px 3px 2px black;
 }
 
 .botao1:hover {
@@ -123,9 +126,9 @@
   font-family: inherit;
   font-weight: 500;
   color: red;
-  background-color: white;
+  background-color: whitesmoke;
   width: 250px;
-  box-shadow: 5px 5px 5px black;
+  text-shadow: 1px 3px 2px black;
 }
 
 .botao2:hover {

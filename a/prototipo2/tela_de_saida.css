@@ -12,15 +12,33 @@ body {
 }
 
 .card {
-    width: 600px;
-    height: 450px;
+    width: 650px;
+    height: 550px;
     background-color: rgb(0, 28, 42);
     border-radius: 25px;
     text-align: center;
     color: #fff;
     box-shadow: 0px 0px 10px rgb(0, 28, 42);
+
 }
 
+.traco1 {
+
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    top: 80px;
+    color: red;
+    text-shadow: 1px 4px 1px black;
+}
+
+.traco2 {
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: red;
+    text-shadow: 1px 4px 1px black;
+}
 
 .sair {
     margin-top: 50px;
@@ -28,30 +46,32 @@ body {
 }
 
 .cabecalhotelasair {
-    font-size: 40px;
-    color: crimson;
-    margin-top: 105px;
+    font-size: 35px;
+    color: red;
+    margin-top: 100px;
     font-family: 'Press Start 2P', cursive;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 1px 4px 1px black;
 }
 
 .botaosair {
     position: relative;
-    font-size: 24px;
+    font-size: 28px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em 1.5em;
     display: inline-block;
-    border-radius: 2.5em;
+    border-radius: 1.0em;
     transition: all .2s;
     border: none;
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
-    color: forestgreen;
-    background-color: white;
-    width: 150px;
-    height: 80px;
-    box-shadow: 5px 5px 5px black;
+    color: lime;
+    background-color: lightgray;
+    width: 170px;
+    height: 95px;
+    box-shadow: 2px 3px 2px black;
+    text-shadow: 1px 2px 8px black;
+
 
 }
 
@@ -91,21 +111,23 @@ body {
 
 .botaotelaprincipal {
     position: relative;
-    font-size: 24px;
+    font-size: 28px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em 1.5em;
     display: inline-block;
-    border-radius: 6em;
+    border-radius: 1.0em;
     transition: all .2s;
     border: none;
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
-    color: crimson;
-    background-color: white;
-    width: 150px;
-    height: 80px;
-    box-shadow: 5px 5px 5px black;
+    color: red;
+    background-color: lightgray;
+    width: 170px;
+    height: 95px;
+    box-shadow: 2px 3px 2px black;
+
+    text-shadow: 1px 2px 8px black;
 
 }
 
