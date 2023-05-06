@@ -189,13 +189,13 @@ window.onload = (function jogar() {
                 document.getElementById("parede").innerHTML += "D "
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "@ "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 5) {
                 document.getElementById("parede").innerHTML += "<font color=green>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "@ "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 7) {
                 document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
@@ -227,13 +227,13 @@ function movimento() {
                 document.getElementById("parede").innerHTML += "D "
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "@ "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 5) {
                 document.getElementById("parede").innerHTML += "<font color=green>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "@ "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 7) {
                 document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
@@ -274,7 +274,7 @@ function chavePorta1() {
                 document.getElementById("parede").innerHTML += "<font color=green>" + "& "
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "@ "
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 7) {
                 document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
