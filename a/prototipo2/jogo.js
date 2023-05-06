@@ -192,7 +192,7 @@ window.onload = (function jogar() {
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=green>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
             }
             if (mapa[i][j] == 6) {
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
@@ -230,7 +230,7 @@ function movimento() {
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=green>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
             }
             if (mapa[i][j] == 6) {
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
@@ -271,7 +271,7 @@ function chavePorta1() {
                 mapa[10][10] = 0
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=green>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
             }
             if (mapa[i][j] == 6) {
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "@ "
@@ -312,7 +312,7 @@ function chavePorta2() {
                 mapa[10][10] = 0
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=green>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
             }
             if (mapa[i][j] == 6) {
                 mapa[5][8] = 0
@@ -356,7 +356,7 @@ function trap(params) {
             }
             if (mapa[i][j] == 5) {
 
-                document.getElementById("parede").innerHTML += "<font color=green>" + "& "
+                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
 
             }
 
