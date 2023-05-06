@@ -198,10 +198,10 @@ window.onload = (function jogar() {
                 document.getElementById("parede").innerHTML += "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
         } document.getElementById("parede").innerHTML += "<br>"
     }
@@ -236,10 +236,10 @@ function movimento() {
                 document.getElementById("parede").innerHTML += "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
 
         } document.getElementById("parede").innerHTML += "<br>"
@@ -277,7 +277,7 @@ function chavePorta1() {
                 document.getElementById("parede").innerHTML += "@ "
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
 
 
@@ -319,10 +319,10 @@ function chavePorta2() {
 
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
             if (mapa[i][j] == 8) {
-                document.getElementById("parede").innerHTML += "= "
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "= "
             }
 
 
