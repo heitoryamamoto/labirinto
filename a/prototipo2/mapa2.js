@@ -38,6 +38,8 @@ var bonecoC = 7
 var chaveL = 11
 var chaveC = 10
 var tirarChave
+var vida = 0
+
 //1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
 window.addEventListener("keydown", function andar(event) {
@@ -105,6 +107,12 @@ window.addEventListener("keydown", function andar(event) {
             mapa[5][13] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida = 1) {
+                this.document.getElementById("vida3").src = "imagem/vida.png"
+                this.alert("oi")
+            }
+
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
             mapa[bonecoL][bonecoC] = 0
@@ -197,6 +205,14 @@ window.addEventListener("keydown", function andar(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
             mapa[bonecoL][bonecoC] = 4
             bonecoL++
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][16]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[2][16] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
