@@ -100,6 +100,30 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[4][14] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[3][15] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[2][17]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[2][16] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
@@ -117,6 +141,30 @@ window.addEventListener("keydown", function andar(event) {
             bonecoL = 7
             bonecoC = 7
             mapa[5][13] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[5][14]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[4][14] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[3][15] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[2][16] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
