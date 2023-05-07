@@ -124,6 +124,14 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][18]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[1][17] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
@@ -165,6 +173,14 @@ window.addEventListener("keydown", function andar(event) {
             bonecoL = 7
             bonecoC = 7
             mapa[2][16] = 9
+            mapa[bonecoL][bonecoC] = 5
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[2][17]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[1][17] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
