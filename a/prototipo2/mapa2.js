@@ -2,12 +2,12 @@ var x = 0
 var y = 0
 var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1],
-    [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 4, 0, 1, 0, 0, 1, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
-    [1, 1, 1, 1, 0, 0, 0, 0, 6, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1],
-    [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1],
+    [1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 4, 0, 1, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
+    [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 4, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1],
+    [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1],
     [1, 0, 0, 0, 0, 0, 1, 5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 3, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -48,30 +48,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[11][2] == 7) {
-            mapa[bonecoL][bonecoC] = 6
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[11][2] && mapa[10][10] == 0) {
-            mapa[bonecoL][bonecoC] = 7
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][9] && mapa[5][8] == 0) {
-            mapa[bonecoL][bonecoC] = 8
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
+
         else {
 
             mapa[bonecoL][bonecoC] = 0
@@ -134,12 +111,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            bonecoL--
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
+
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -183,6 +155,12 @@ window.addEventListener("keydown", function andar(event) {
 
     //trap()
     //}
+    if (mapa[bonecoL - 1][bonecoC] == mapa[5][13]) {
+        mapa[bonecoL][bonecoC] = 0
+        bonecoL--
+        mapa[bonecoL][bonecoC] = 5
+        this.alert("oi")
+    }
 
 })
 
@@ -260,6 +238,7 @@ function movimento() {
 
         } document.getElementById("parede").innerHTML += "<br>"
     }
+
 }
 
 function chavePorta1() {
