@@ -111,6 +111,9 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[5][13]) {
+            this.alert("oi")
+        }
 
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -155,12 +158,7 @@ window.addEventListener("keydown", function andar(event) {
 
     //trap()
     //}
-    if (mapa[bonecoL - 1][bonecoC] == mapa[5][13]) {
-        mapa[bonecoL][bonecoC] = 0
-        bonecoL--
-        mapa[bonecoL][bonecoC] = 5
-        this.alert("oi")
-    }
+
 
 })
 
