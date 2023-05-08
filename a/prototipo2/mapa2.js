@@ -94,12 +94,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][9] && mapa[5][8] == 0) {
-            mapa[bonecoL][bonecoC] = 8
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 5
-            movimento()
-        }
+
         else if (mapa[bonecoL][bonecoC] == mapa[5][14]) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
