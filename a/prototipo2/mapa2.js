@@ -108,10 +108,19 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
             vida++
-            if (vida = 1) {
-                this.document.getElementById("vida3").src = "imagem/vida.png"
-                this.alert("oi")
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
             }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
+
+
 
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
@@ -121,6 +130,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[4][14] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
             mapa[bonecoL][bonecoC] = 0
@@ -129,6 +150,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[3][15] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[2][17]) {
             mapa[bonecoL][bonecoC] = 0
@@ -137,12 +170,36 @@ window.addEventListener("keydown", function andar(event) {
             mapa[2][16] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[1][12]) {
             mapa[bonecoL][bonecoC] = 10
             bonecoC--
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
 
         else {
@@ -158,12 +215,26 @@ window.addEventListener("keydown", function andar(event) {
             movimento()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[6][13]) {
+            vida++
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
             bonecoC = 7
             mapa[5][13] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
+
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][14]) {
             mapa[bonecoL][bonecoC] = 0
@@ -172,6 +243,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[4][14] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
             mapa[bonecoL][bonecoC] = 0
@@ -180,6 +263,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[3][15] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
             mapa[bonecoL][bonecoC] = 0
@@ -188,6 +283,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[2][16] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
 
         else {
@@ -215,6 +322,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[2][16] = 9
             mapa[bonecoL][bonecoC] = 5
             movimento()
+            vida++
+            if (vida == 1) {
+                this.document.getElementById("vida3").src = ""
+
+            }
+            else if (vida == 2) {
+                this.document.getElementById("vida2").src = ""
+
+            }
+            else {
+                this.document.getElementById("vida1").src = ""
+            }
         }
         else {
             mapa[bonecoL][bonecoC] = 0
