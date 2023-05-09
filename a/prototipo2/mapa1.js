@@ -271,7 +271,7 @@ function chavePorta1() {
                 document.getElementById("parede").innerHTML += "D "
             }
             if (mapa[i][j] == 4) {
-                mapa[10][10] = 0
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
             }
             if (mapa[i][j] == 5) {
                 document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
