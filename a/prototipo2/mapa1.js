@@ -57,16 +57,11 @@ window.addEventListener("keydown", function andar(event) {
             movimento()
             window.location.replace("mapa2.html")
         }
-
         else {
-
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
             mapa[bonecoL][bonecoC] = 5
-
             movimento()
-
-
         }
 
     }
@@ -87,8 +82,6 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-
-
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
             mapa[bonecoL][bonecoC] = 4
             bonecoC--
@@ -107,12 +100,10 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
-
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
             mapa[bonecoL][bonecoC] = 5
-
             movimento()
         }
     }
@@ -131,7 +122,6 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
             mapa[bonecoL][bonecoC] = 5
-
             movimento()
         }
 
@@ -152,15 +142,11 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
             mapa[bonecoL][bonecoC] = 5
-
             movimento()
         }
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[10][10]) {
-
         chavePorta1()
-
-
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[5][8]) {
         chavePorta2()
@@ -249,6 +235,7 @@ function movimento() {
     }
 }
 
+
 function chavePorta1() {
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
@@ -263,9 +250,6 @@ function chavePorta1() {
             }
             if (mapa[i][j] == 2) {
                 mapa[11][2] = 7
-
-
-
             }
             if (mapa[i][j] == 3) {
                 document.getElementById("parede").innerHTML += "D "
@@ -282,10 +266,6 @@ function chavePorta1() {
             if (mapa[i][j] == 7) {
                 document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
-
-
-
-
         } document.getElementById("parede").innerHTML += "<br>"
 
     }
@@ -304,9 +284,6 @@ function chavePorta2() {
             }
             if (mapa[i][j] == 2) {
                 mapa[11][2] = 7
-
-
-
             }
             if (mapa[i][j] == 3) {
                 mapa[2][9] = 8
@@ -319,7 +296,6 @@ function chavePorta2() {
             }
             if (mapa[i][j] == 6) {
                 mapa[5][8] = 0
-
             }
             if (mapa[i][j] == 7) {
                 document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
@@ -327,10 +303,6 @@ function chavePorta2() {
             if (mapa[i][j] == 8) {
                 document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
-
-
-
-
         } document.getElementById("parede").innerHTML += "<br>"
 
     }
@@ -343,12 +315,9 @@ function trap(params) {
             if (mapa[i][j] == 1) {
                 mapa[4][2] = 1
                 document.getElementById("parede").innerHTML += "* "
-
             }
             if (mapa[i][j] == 0) {
-
                 document.getElementById("parede").innerHTML += "  "
-
             }
             if (mapa[i][j] == 2) {
                 mapa[i][j] = x
@@ -358,9 +327,7 @@ function trap(params) {
                 document.getElementById("parede").innerHTML += "  "
             }
             if (mapa[i][j] == 5) {
-
                 document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
-
             }
 
         } document.getElementById("parede").innerHTML += "<br>"
