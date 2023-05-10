@@ -63,19 +63,20 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoC++
-            mapa[bonecoC][bonecoL] = 4
+            mapa[bonecoL][bonecoC] = 4
             movimento()
-        }   
+        }
+
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        
+
 
     }
     if (tecla == "65") {
@@ -170,12 +171,12 @@ window.addEventListener("keydown", function andar(event) {
 
             }
         }
-        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
             mapa[bonecoL][bonecoC] = 3
-            bonecoC++
-            mapa[bonecoC][bonecoL] = 4
+            bonecoC--
+            mapa[bonecoL][bonecoC] = 4
             movimento()
-        }   
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
@@ -276,12 +277,12 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
             mapa[bonecoL][bonecoC] = 3
-            bonecoC++
-            mapa[bonecoC][bonecoL] = 4
+            bonecoL--
+            mapa[bonecoL][bonecoC] = 4
             movimento()
-        }   
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -328,6 +329,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
