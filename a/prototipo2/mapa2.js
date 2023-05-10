@@ -13,7 +13,7 @@ var mapa = [
     [1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-    [1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
@@ -63,12 +63,19 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoC++
+            mapa[bonecoC][bonecoL] = 4
+            movimento()
+        }   
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+        
 
     }
     if (tecla == "65") {
@@ -163,6 +170,12 @@ window.addEventListener("keydown", function andar(event) {
 
             }
         }
+        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoC++
+            mapa[bonecoC][bonecoL] = 4
+            movimento()
+        }   
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
@@ -263,6 +276,12 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+        else if(mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2 ){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoC++
+            mapa[bonecoC][bonecoL] = 4
+            movimento()
+        }   
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
