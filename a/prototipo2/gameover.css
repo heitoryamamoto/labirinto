@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: rgb(44, 51, 51);
+}
+
+.card {
+    width: 650px;
+    height: 550px;
+    background-color: rgb(0, 28, 42);
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgb(0, 28, 42);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.centralizandobotao {
+    margin-top: 205px;
+    font-size: 25px;
+}
+
+.botaomenu {
+    position: relative;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    display: inline-block;
+    border-radius: 1.0em;
+    transition: all .2s;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    color: lime;
+    background-color: lightgray;
+    width: 200px;
+    height: 140px;
+    box-shadow: 2px 3px 2px black;
+    text-shadow: 1px 2px 8px black;
+
+
+}
+
+.botaomenu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botaomenu:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botaomenu::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.botaomenu::after {
+    background-color: #fff;
+}
+
+.botaomenu:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.botaosair {
+    position: relative;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    display: inline-block;
+    border-radius: 1.0em;
+    transition: all .2s;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    color: red;
+    background-color: lightgray;
+    width: 200px;
+    height: 140px;
+    box-shadow: 2px 3px 2px black;
+
+    text-shadow: 1px 2px 8px black;
+
+}
+
+.botaosair:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botaosair:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botaosair::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.botaosair::after {
+    background-color: #fff;
+}
+
+.botaosair:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
