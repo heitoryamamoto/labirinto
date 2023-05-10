@@ -323,9 +323,9 @@ window.addEventListener("keydown", function andar(event) {
         }
         if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
             botao1(1)
-
+            return
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 1) {
+        if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 1) {
             botao1(0)
         }
 
@@ -524,6 +524,7 @@ function botao1(contagem) {
 
     }
 }
+
 
 
 
