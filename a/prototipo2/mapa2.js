@@ -40,6 +40,7 @@ var chaveC = 10
 var tirarChave
 var vida = 0
 
+
 //1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
 window.addEventListener("keydown", function andar(event) {
@@ -316,12 +317,22 @@ window.addEventListener("keydown", function andar(event) {
         }
 
     }
-    if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[2][27]) {
-        chavePorta1()
+    if (tecla == "73") {
+        if (mapa[bonecoL][bonecoC] == mapa[2][27]) {
+            chavePorta1()
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
+            botao1(1)
+
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 1) {
+            botao1(0)
+        }
+
+
     }
-    if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[1][12]) {
-        botao1()
-    }
+
+
     //TRAP SECRETA
     //if (tecla == "68" && mapa[bonecoL][bonecoC] == mapa[4][3]) {
 
@@ -474,14 +485,15 @@ function chavePorta2() {
 
     }
 }
-function botao1() {
-    this.document.getElementById("parede").innerHTML = ""
-    mapa[1][23] = 0
-    mapa[2][24] = 0
-    mapa[3][25] = 0
-    mapa[4][26] = 0
-    mapa[5][27] = 0
-    mapa[6][28] = 0
+function botao1(contagem) {
+
+    document.getElementById("parede").innerHTML = ""
+    mapa[1][23] = contagem
+    mapa[6][28] = contagem
+    mapa[2][24] = contagem
+    mapa[3][25] = contagem
+    mapa[4][26] = contagem
+    mapa[5][27] = contagem
     for (i = 0; i < 30; i++) {
         for (j = 0; j < 30; j++) {
             if (mapa[i][j] == 0) {
@@ -512,6 +524,7 @@ function botao1() {
 
     }
 }
+
 
 
 function trap(params) {
