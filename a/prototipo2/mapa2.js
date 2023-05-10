@@ -96,9 +96,11 @@ window.addEventListener("keydown", function andar(event) {
                 this.document.getElementById("vida2").src = ""
 
             }
-            else {
+            else if (vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
+            
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
             mapa[bonecoL][bonecoC] = 0
@@ -114,10 +116,13 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if (vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
+                
             }
-        }
+            
+            }
         else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
@@ -132,8 +137,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if(vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[2][17]) {
@@ -150,8 +156,10 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if (vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
+                
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[1][12]) {
@@ -166,8 +174,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if(vida == 3){
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else {
@@ -196,8 +205,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if(vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][14]) {
@@ -214,8 +224,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if (vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][15]) {
@@ -232,8 +243,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if(vida == 3){
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[3][16]) {
@@ -250,8 +262,9 @@ window.addEventListener("keydown", function andar(event) {
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
             }
-            else {
+            else if(vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
         else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
@@ -288,14 +301,18 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             if (vida == 1) {
                 this.document.getElementById("vida3").src = ""
+                
             }
             else if (vida == 2) {
                 this.document.getElementById("vida2").src = ""
+                
             }
-            else {
+            else if(vida == 3) {
                 this.document.getElementById("vida1").src = ""
+                window.location.replace("gameover.html")
             }
         }
+        
         else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
             mapa[bonecoL][bonecoC] = 11
             bonecoL++
@@ -314,6 +331,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 5
             movimento()
         }
+        
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[2][27]) {
         chavePorta1()
@@ -326,6 +344,7 @@ window.addEventListener("keydown", function andar(event) {
 
     //trap()
     //}
+    
 
 
 })
@@ -583,3 +602,4 @@ function trap(params) {
         } document.getElementById("parede").innerHTML += "<br>"
     }
 }
+
