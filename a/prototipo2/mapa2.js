@@ -41,16 +41,13 @@ var tirarChave
 var vida = 0
 
 
-
 //1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
 window.addEventListener("keydown", function andar(event) {
     var tecla = event.keyCode
 
-    var colisao = mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2
-
     if (tecla == "68") {
-        if (colisao) {
+        if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
