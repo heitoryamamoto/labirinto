@@ -65,7 +65,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     color: lime;
-    background-color: lightgray;
+    background-color: white;
     width: 170px;
     height: 95px;
     box-shadow: 2px 3px 2px black;
@@ -121,7 +121,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     color: red;
-    background-color: lightgray;
+    background-color: white;
     width: 170px;
     height: 95px;
     box-shadow: 2px 3px 2px black;
