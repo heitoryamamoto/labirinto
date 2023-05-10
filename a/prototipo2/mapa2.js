@@ -438,7 +438,7 @@ function movimento() {
 
 function chavePorta1() {
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
-
+    mapa[8][28] = 5
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 30; i++) {
         for (j = 0; j < 30; j++) {
@@ -449,7 +449,6 @@ function chavePorta1() {
                 document.getElementById("parede").innerHTML += "* "
             }
             if (mapa[i][j] == 2) {
-                mapa[8][28] = 5
                 document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
             }
             if (mapa[i][j] == 3) {
