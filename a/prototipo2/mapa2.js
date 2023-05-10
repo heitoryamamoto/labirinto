@@ -8,14 +8,14 @@ var mapa = [
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
     [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1],
     [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 1, 1],
-    [1, 0, 0, 0, 0, 0, 1, 4, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 0, 0, 0, 1, 4, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
+    [1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1],
+    [1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
+    [1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -57,7 +57,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] && mapa[9][11]== 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
@@ -76,7 +76,7 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] && mapa[9][11] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoC--
             mapa[bonecoL][bonecoC] = 4
@@ -251,13 +251,13 @@ window.addEventListener("keydown", function andar(event) {
                 window.location.replace("gameover.html")
             }
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] && mapa[9][11] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoL--
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[8][28] && mapa[2][27] == 0) {
+        else if (mapa[bonecoL][bonecoC] == mapa[8][28] && mapa[2][27] && mapa[9][11] == 0) {
             mapa[bonecoL][bonecoC] = 5
             bonecoL--
             mapa[bonecoL][bonecoC] = 4
@@ -297,13 +297,13 @@ window.addEventListener("keydown", function andar(event) {
             }
         }
 
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] && mapa[9][11] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoL++
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[8][28] && mapa[2][27] == 0) {
+        else if (mapa[bonecoL][bonecoC] == mapa[8][28] && mapa[2][27] && mapa[9][11] == 0) {
             mapa[bonecoL][bonecoC] = 5
             bonecoL++
             mapa[bonecoL][bonecoC] = 4
