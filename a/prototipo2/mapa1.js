@@ -31,6 +31,7 @@ window.addEventListener("keydown", function andar(event) {
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
+            
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
             mapa[bonecoL][bonecoC] = 3
@@ -147,6 +148,7 @@ window.addEventListener("keydown", function andar(event) {
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[10][10]) {
         chavePorta1()
+        
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[5][8]) {
         chavePorta2()
