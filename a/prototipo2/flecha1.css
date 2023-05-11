@@ -1,0 +1,15 @@
+.flecha{
+    position: absolute;
+    bottom: 0;
+    width: 2%;
+    animation: flecha-animation 2s infinite linear;
+    
+}
+@keyframes flecha-animation{
+    from {
+        bottom: -2%;;
+    }
+    to{
+        bottom: 100%;
+    }
+}
