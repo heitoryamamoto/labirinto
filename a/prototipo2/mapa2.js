@@ -14,7 +14,7 @@ var mapa = [
     [1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
     [1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -65,6 +65,18 @@ window.addEventListener("keydown", function andar(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
             mapa[bonecoL][bonecoC] = 3
+            bonecoC++
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoC++
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[9][11] && mapa[6][20] == 0) {
+            mapa[bonecoL][bonecoC] = 5
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
             movimento()
@@ -176,6 +188,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoC--
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[9][11] && mapa[6][20] == 0) {
+            mapa[bonecoL][bonecoC] = 5
+            bonecoC--
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
@@ -282,6 +306,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
+        else if(mapa[bonecoL][bonecoC] == mapa[8][20] && mapa[12][20] == 0){
+            mapa[bonecoL][bonecoC] = 5
+            bonecoL--
+            mapa[bonecoL][bonecoC] = 4
+            movimento() 
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoL--
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -328,7 +364,18 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-
+        else if(mapa[bonecoL][bonecoC] == mapa[8][20] && mapa[12][20] == 0){
+            mapa[bonecoL][bonecoC] = 5
+            bonecoL++
+            mapa[bonecoL][bonecoC] = 4
+            movimento() 
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2){
+            mapa[bonecoL][bonecoC] = 3
+            bonecoL++
+            mapa[bonecoL][bonecoC] = 4
+            movimento()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
@@ -343,6 +390,9 @@ window.addEventListener("keydown", function andar(event) {
         }
         if (mapa[bonecoL][bonecoC] == mapa[12][20]) {
             chavePorta2()
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[6][20]) {
+            chavePorta3()
         }
         if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
             botao1(1)
@@ -504,6 +554,41 @@ function chavePorta2() {
 
     }
 }
+
+function chavePorta3() {
+    mapa[9][11] = 5
+    this.document.getElementById("parede").innerHTML = ""
+    for (i = 0; i < 30; i++) {
+        for (j = 0; j < 30; j++) {
+            if (mapa[i][j] == 0) {
+                document.getElementById("parede").innerHTML += "  "
+            }
+            if (mapa[i][j] == 1) {
+                document.getElementById("parede").innerHTML += "* "
+            }
+            if (mapa[i][j] == 2) {
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
+            }
+            if (mapa[i][j] == 3) {
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
+            }
+            if (mapa[i][j] == 4) {
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
+            }
+            if (mapa[i][j] == 5) {
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
+            }
+            if (mapa[i][j] == 6) {
+                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
+            }
+            if (mapa[i][j] == 7) {
+                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
+            }
+        } document.getElementById("parede").innerHTML += "<br>"
+
+    }
+}
+
 function botao1(contagem) {
 
     document.getElementById("parede").innerHTML = ""
