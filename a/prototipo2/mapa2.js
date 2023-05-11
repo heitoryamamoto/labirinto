@@ -38,8 +38,8 @@ var bonecoC = 7
 var chaveL = 11
 var chaveC = 10
 var vida = 0
-tmp = setInterval(movimento, 20)
 
+tmp = setInterval(movimento, 20)
 //1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
 window.addEventListener("keydown", function andar(event) {
@@ -81,6 +81,7 @@ window.addEventListener("keydown", function andar(event) {
 
         }
         else {
+
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
@@ -330,6 +331,7 @@ window.addEventListener("keydown", function andar(event) {
 
 
 window.onload = (function jogar() {
+
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     for (i = 0; i < 30; i++) {
         for (j = 0; j < 30; j++) {
