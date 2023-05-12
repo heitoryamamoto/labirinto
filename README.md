@@ -5,7 +5,7 @@
 · @DeivisonTavares
 · @GustavoNishimura
 
-## História do Jogo
+## História do Jogo📜
 ➠ Robb, um engenheiro da computação talentoso, trabalhava na instituição CESUPA Argo 1, onde estava envolvido em um projeto revolucionário. Sua equipe estava desenvolvendo um portal que permitiria a locomoção entre o CESUPA Argo 1 e a instituição CESUPA Medicina. O objetivo era facilitar o intercâmbio de conhecimento e avanços científicos entre as duas áreas.
 
 Após meses de árduo trabalho, a equipe finalmente conseguiu criar o portal. Animados com o resultado, decidiram testá-lo imediatamente. Como Robb era um engenheiro da computação e um dos voluntários para o experimento, ele se ofereceu para ser a primeira pessoa a atravessar o portal e verificar sua funcionalidade. (editado)
