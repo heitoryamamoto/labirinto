@@ -38,9 +38,10 @@ var bonecoC = 7
 var chaveL = 11
 var chaveC = 10
 var vida = 0
+var tmp
 
 tmp = setInterval(movimento, 20)
-//1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
+
 
 window.addEventListener("keydown", function andar(event) {
     var tecla = event.keyCode
@@ -366,6 +367,7 @@ window.onload = (function jogar() {
 
 
 function movimento() {
+    console.log(tmp)
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 30; i++) {
