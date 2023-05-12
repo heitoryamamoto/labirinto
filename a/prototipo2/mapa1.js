@@ -219,4 +219,3 @@ function chavePorta2() {
     // IMPRIMIR MAPA
     movimento()
 }
-
