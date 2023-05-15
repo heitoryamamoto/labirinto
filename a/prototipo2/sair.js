@@ -14,5 +14,5 @@ function tutorial(params) {
     window.location.replace("tela_de_tutorial.html")
 }
 function jogo(params) {
-    window.location.replace("faseTeste1.html")
+    window.location.replace("mapa1.html")
 }
