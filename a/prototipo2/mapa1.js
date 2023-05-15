@@ -1,5 +1,4 @@
-var x = 0
-var y = 0
+// MAPA
 var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
@@ -17,21 +16,48 @@ var mapa = [
     [1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
+// POSIÇÃO DO BONECO
 var bonecoL = 7
 var bonecoC = 7
-var chaveL = 11
-var chaveC = 10
-var tirarChave
-//1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
 
-window.addEventListener("keydown", function andar(event) {
-    var tecla = event.keyCode
+
+// CARREGAR A PÁGINA COM O MAPA
+window.onload = (function iniciarMapa() {
+    for (i = 0; i < 15; i++) {
+        for (j = 0; j < 15; j++) {
+            if (mapa[i][j] == 0) {
+                document.getElementById("parede").innerHTML += "  "
+            }
+            if (mapa[i][j] == 1) {
+                document.getElementById("parede").innerHTML += "* "
+            }
+            if (mapa[i][j] == 2) {
+                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
+            }
+            if (mapa[i][j] == 3) {
+                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
+            }
+            if (mapa[i][j] == 4) {
+                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
+            }
+            if (mapa[i][j] == 5) {
+                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
+            }
+        } document.getElementById("parede").innerHTML += "<br>"
+    }
+})
+
+// ADICIONANDO O EVENTO DE DESCER TECLA
+window.addEventListener("keydown", andar)
+
+// MOVIMENTO
+function andar(teste) {
+    var tecla = teste.keyCode
 
     if (tecla == "68") {
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
-            
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
             mapa[bonecoL][bonecoC] = 3
@@ -125,8 +151,6 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-
-
     }
     if (tecla == "83") {
         if (mapa[bonecoL + 1][bonecoC] == 1 || mapa[bonecoL + 1][bonecoC] == 2) {
@@ -148,51 +172,14 @@ window.addEventListener("keydown", function andar(event) {
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[10][10]) {
         chavePorta1()
-        
     }
     if (tecla == "73" && mapa[bonecoL][bonecoC] == mapa[5][8]) {
         chavePorta2()
     }
-    //TRAP SECRETA
-    //if (tecla == "68" && mapa[bonecoL][bonecoC] == mapa[4][3]) {
+}
 
-    //trap()
-    //}
-
-})
-
-
-
-window.onload = (function jogar() {
-    //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
-    for (i = 0; i < 15; i++) {
-        for (j = 0; j < 15; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-    }
-
-})
-
-
+// IMPRIMIR MOVIMENTO
 function movimento() {
-    //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
@@ -214,95 +201,21 @@ function movimento() {
             if (mapa[i][j] == 5) {
                 document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
             }
-
         } document.getElementById("parede").innerHTML += "<br>"
     }
 }
 
-
+// ABRIR PORTA 1
 function chavePorta1() {
-    //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
-
-    this.document.getElementById("parede").innerHTML = ""
-    for (i = 0; i < 15; i++) {
-        for (j = 0; j < 15; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                mapa[11][2] = 5
-                mapa[2][9] = 2
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
-
+    // TROCAR PORTA FECHADA POR ABERTA
+    mapa[11][2] = 5
+    // IMPRIMIR MAPA
+    movimento()
 }
+// ABRIR PORTA 2
 function chavePorta2() {
-
-    this.document.getElementById("parede").innerHTML = ""
-    for (i = 0; i < 15; i++) {
-        for (j = 0; j < 15; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                mapa[11][2] = 5
-                mapa[2][9] = 5
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
-}
-
-function trap(params) {
-    document.getElementById("parede").innerHTML = ""
-    for (i = 0; i < 15; i++) {
-        for (j = 0; j < 15; j++) {
-            if (mapa[i][j] == 1) {
-                mapa[4][2] = 1
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 2) {
-                mapa[i][j] = x
-                this.document.getElementById("porta").removeAttribute("style")
-                document.getElementById("porta").style.top = 210 + "px"
-                document.getElementById("porta").style.left = 37 + "px"
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=#27E1C1>" + "& "
-            }
-
-        } document.getElementById("parede").innerHTML += "<br>"
-    }
+    // TROCAR PORTA FECHADA POR ABERTA
+    mapa[2][9] = 5
+    // IMPRIMIR MAPA
+    movimento()
 }
