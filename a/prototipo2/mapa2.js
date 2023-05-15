@@ -26,7 +26,7 @@ var mapa = [
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
     [1, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
-    [1, 0, 0, 0, 0, 0, 6, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 6, 1, 0, 0, 1, 0, 0, 0, 0, 6, 1, 0, 1],
+    [1, 0, 0, 0, 0, 0, 6, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1],
     [1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 0, 0, 1, 1, 2, 1, 1, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -157,6 +157,22 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[25][4] && mapa[24][6] == 7) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[24][5] && mapa[24][6] == 7) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
         else {
 
             mapa[bonecoL][bonecoC] = 0
@@ -237,6 +253,14 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[25][6] && mapa[24][6] == 7) {
+            mapa[bonecoL][bonecoC] = 6
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoC--
@@ -282,18 +306,6 @@ window.addEventListener("keydown", function andar(event) {
 
         }
         else if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
-            mapa[bonecoL][bonecoC] = 6
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[25][17]) {
-            mapa[bonecoL][bonecoC] = 6
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[25][26]) {
             mapa[bonecoL][bonecoC] = 6
             bonecoC--
             mapa[bonecoL][bonecoC] = 4
@@ -383,6 +395,14 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[25][6] && mapa[24][6] == 7) {
+            mapa[bonecoL][bonecoC] = 6
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoL--
@@ -437,6 +457,12 @@ window.addEventListener("keydown", function andar(event) {
             mapa[bonecoL][bonecoC] = 4
 
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[26][3] && mapa[23][3] == 0) {
+            mapa[bonecoL][bonecoC] = 5
+            bonecoL--
+            mapa[bonecoL][bonecoC] = 4
+
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[26][24] && mapa[23][24] == 0) {
             mapa[bonecoL][bonecoC] = 5
             bonecoL--
@@ -444,12 +470,6 @@ window.addEventListener("keydown", function andar(event) {
 
         }
         else if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
-            mapa[bonecoL][bonecoC] = 6
-            bonecoL--
-            mapa[bonecoL][bonecoC] = 4
-
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[25][26]) {
             mapa[bonecoL][bonecoC] = 6
             bonecoL--
             mapa[bonecoL][bonecoC] = 4
@@ -478,6 +498,22 @@ window.addEventListener("keydown", function andar(event) {
             morte()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[6][10]) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[24][5] && mapa[24][6] == 7) {
+            mapa[bonecoL][bonecoC] = 0
+            bonecoL = 7
+            bonecoC = 7
+            mapa[bonecoL][bonecoC] = 4
+            vida++
+            morte()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[23][6] && mapa[24][6] == 7) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
             bonecoC = 7
@@ -581,6 +617,9 @@ window.addEventListener("keydown", function andar(event) {
         }
         if (mapa[bonecoL][bonecoC] == mapa[23][24]) {
             chavePorta(26, 24)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
+            trap(25, 5, 24, 6)
         }
         if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
             botao1(1)
@@ -790,7 +829,11 @@ function botao2(contagem) {
 
     }
 }
-
+function trap(i, j, k, l) {
+    document.getElementById("parede").innerHTML = ""
+    mapa[i][j] = 7
+    mapa[k][l] = 7
+}
 function morte(params) {
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
