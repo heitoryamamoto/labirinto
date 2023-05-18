@@ -28,13 +28,13 @@ var mapa = [
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
     [1, 0, 0, 0, 0, 0, 6, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1],
     [1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 0, 0, 1, 1, 2, 1, 1, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
-var bonecoL = 23
-var bonecoC = 3
+var bonecoL = 7
+var bonecoC = 7
 var chaveL = 11
 var chaveC = 10
 var vida = 0
@@ -157,7 +157,7 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
-        
+
         else if (mapa[bonecoL][bonecoC] == mapa[25][4] && mapa[24][6] == 7) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
@@ -270,7 +270,7 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[14][15] && mapa[14][15] ) {
+        else if (mapa[bonecoL][bonecoC] == mapa[14][15] && mapa[14][15]) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
             bonecoC = 7
@@ -278,7 +278,7 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[13][6] && mapa[13][6] ) {
+        else if (mapa[bonecoL][bonecoC] == mapa[13][6] && mapa[13][6]) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
             bonecoC = 7
@@ -286,7 +286,7 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[15][7] && mapa[15][7] ) {
+        else if (mapa[bonecoL][bonecoC] == mapa[15][7] && mapa[15][7]) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL = 7
             bonecoC = 7
@@ -587,7 +587,7 @@ window.addEventListener("keydown", function andar(event) {
             vida++
             morte()
         }
-        
+
         else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
             mapa[bonecoL][bonecoC] = 3
             bonecoL++
