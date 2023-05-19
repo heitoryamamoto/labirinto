@@ -33,8 +33,8 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
-var bonecoL = 23
-var bonecoC = 3
+var bonecoL = 7
+var bonecoC = 7
 var chaveL = 11
 var chaveC = 10
 var vida = 0
