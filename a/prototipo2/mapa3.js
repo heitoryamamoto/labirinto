@@ -113,7 +113,7 @@ window.onload = (function jogar() {
 
 function moverDireita(params) {
     mapa[bonecoL][bonecoC] = 0
-    bonecoC += 2
+    bonecoC++
     mapa[bonecoL][bonecoC] = 4
 }
 
