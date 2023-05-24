@@ -116,7 +116,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC - 1] == 7) {
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
             continuarChaveCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
@@ -155,7 +155,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL - 1][bonecoC] == 7) {
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
+        else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
             continuarChaveLMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
@@ -214,6 +214,43 @@ function teclaBaixo(event) {
         }
 
     }
+    if (tecla == "73") {
+        if (mapa[bonecoL][bonecoC] == mapa[6][5]) {
+            chavePorta(4, 1)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[12][20]) {
+            chavePorta(8, 20)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[6][20]) {
+            chavePorta(9, 11)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[3][20]) {
+            chavePorta(12, 12)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[23][3]) {
+            chavePorta(26, 3)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[23][14]) {
+            chavePorta(26, 14)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[23][24]) {
+            chavePorta(26, 24)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 0) {
+            botao1(1)
+
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 1) {
+            botao1(0)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[13][8] && mapa[5][19] == 1) {
+            botao2(0)
+
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[13][8] && mapa[5][19] == 0) {
+            botao2(1)
+        }
+}
 }
 
 window.onload = (function jogar() {
@@ -289,35 +326,7 @@ function movimento() {
 function chavePorta(i, j) {
     mapa[i][j] = 5
     this.document.getElementById("parede").innerHTML = ""
-    for (i = 0; i < 60; i++) {
-        for (j = 0; j < 60; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-            if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
-            }
-            if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
+    movimento()
 }
 function continuarChaveCMais() {
     mapa[bonecoL][bonecoC] = 3
@@ -360,4 +369,11 @@ function morte(params) {
         this.document.getElementById("vida1").src = ""
         window.location.replace("gameover.html")
     }
+}
+function botao1(contagem) {
+
+    document.getElementById("parede").innerHTML = ""
+    mapa[8][14] = contagem
+    
+    movimento()
 }
