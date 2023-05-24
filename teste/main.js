@@ -5,17 +5,17 @@ var mapa = [
     [1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 7, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 3, 0, 1],
     [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 7, 0, 0, 1, 0, 3, 0, 1, 0, 0, 1, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
-    [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 7, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1],
-    [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0, 0, 0, 7, 0, 1, 0, 1, 1, 1, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1],
+    [1, 1, 1, 1, 7, 7, 0, 0, 7, 1, 0, 1, 1, 7, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1],
+    [1, 0, 0, 0, 1, 1, 7, 0, 0, 1, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 1, 1],
     [1, 0, 1, 0, 0, 0, 1, 4, 0, 1, 7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
     [1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1],
     [1, 1, 0, 0, 7, 1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 0, 0, 7, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-    [1, 0, 0, 1, 1, 1, 1, 0, 0, 7, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 7, 0, 1, 6, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 7, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 7, 1, 1, 1, 1, 0, 0, 7, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 7, 0, 7, 0, 1, 6, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1],
+    [1, 7, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 7, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 0, 1, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -34,7 +34,7 @@ var mapa = [
 ]
 
 var bonecoL = 23
-var bonecoC = 25
+var bonecoC = 5
 var chaveL = 11
 var chaveC = 10
 var vida = 0
@@ -125,6 +125,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[12][12] && mapa[3][20] == 0) {
             continuarPortaCMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
+            continuarBotaoCMenos()
+        }
         else {
 
             mapa[bonecoL][bonecoC] = 0
@@ -163,6 +166,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[13][8]) {
             continuarBotaoLMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
+            continuarBotaoLMenos()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[8][28] && mapa[2][27] == 0) {
             continuarPortaLMenos()
         }
@@ -173,6 +179,9 @@ function teclaBaixo(event) {
             continuarPortaLMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[26][24] && mapa[23][24] == 0) {
+            continuarPortaLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[26][14] && mapa[23][14] == 0) {
             continuarPortaLMenos()
         }
         else {
@@ -220,6 +229,10 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[26][24] && mapa[23][24] == 0) {
             continuarPortaLMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[26][14] && mapa[23][14] == 0) {
+            continuarPortaLMais()
+            window.location.replace("mapa3.html")
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
@@ -253,16 +266,14 @@ function teclaBaixo(event) {
         if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
             trap(25, 5, 24, 6)
         }
-        if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
-            botao1(1)
-
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 1) {
+        if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 1) {
             botao1(0)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][12] && mapa[1][23] == 0) {
+            botao1(1)
         }
         if (mapa[bonecoL][bonecoC] == mapa[13][8] && mapa[5][19] == 1) {
             botao2(0)
-
         }
         else if (mapa[bonecoL][bonecoC] == mapa[13][8] && mapa[5][19] == 0) {
             botao2(1)
@@ -373,7 +384,6 @@ function chavePorta(i, j) {
 }
 
 function botao1(contagem) {
-
     document.getElementById("parede").innerHTML = ""
     mapa[1][23] = contagem
     mapa[6][28] = contagem
@@ -381,76 +391,19 @@ function botao1(contagem) {
     mapa[3][25] = contagem
     mapa[4][26] = contagem
     mapa[5][27] = contagem
-    for (i = 0; i < 30; i++) {
-        for (j = 0; j < 30; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-            if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
-            }
-            if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
+    movimento()
 }
 function botao2(contagem) {
-
     document.getElementById("parede").innerHTML = ""
     mapa[5][19] = contagem
     mapa[5][21] = contagem
-
-    for (i = 0; i < 30; i++) {
-        for (j = 0; j < 30; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-            if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
-            }
-            if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
+    movimento()
 }
 function trap(i, j, k, l) {
     document.getElementById("parede").innerHTML = ""
     mapa[i][j] = 7
     mapa[k][l] = 7
+    movimento()
 }
 function morte(params) {
     vida++
@@ -458,6 +411,7 @@ function morte(params) {
     bonecoL = 7
     bonecoC = 7
     mapa[bonecoL][bonecoC] = 4
+    mapa[25][6] = 6
     movimento()
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
