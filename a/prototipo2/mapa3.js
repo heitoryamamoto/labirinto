@@ -75,6 +75,15 @@ window.addEventListener("keydown", function andar(oi) {
     if (tecla == "68") {
         moverDireita()
     }
+    if (tecla == "65") {
+        moverEsquerda()
+    }
+    if (tecla == "83") {
+        moverBaixo()
+    }
+    if (tecla == "87") {
+        moverCima()
+    }
 })
 
 window.onload = (function jogar() {
@@ -114,6 +123,24 @@ window.onload = (function jogar() {
 function moverDireita(params) {
     mapa[bonecoL][bonecoC] = 0
     bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function moverEsquerda(params) {
+    mapa[bonecoL][bonecoC] = 0
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function moverBaixo(params) {
+    mapa[bonecoL][bonecoC] = 0
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function moverCima(params) {
+    mapa[bonecoL][bonecoC] = 0
+    bonecoL--
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
