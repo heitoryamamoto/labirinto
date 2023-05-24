@@ -33,10 +33,8 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
-var bonecoL = 23
-var bonecoC = 5
-var chaveL = 11
-var chaveC = 10
+var bonecoL = 7
+var bonecoC = 7
 var vida = 0
 
 
@@ -231,7 +229,7 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[26][14] && mapa[23][14] == 0) {
             continuarPortaLMais()
-            window.location.replace("mapa3.html")
+            window.location.replace("fase3.html")
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -283,40 +281,12 @@ function teclaBaixo(event) {
 
 window.onload = (function iniciarMapa() {
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
-    for (i = 0; i < 30; i++) {
-        for (j = 0; j < 30; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += '<span style="color: yellow;">D </span>';
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += '<span style="color: deeppink;">@ </span>';
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += '<span style="color: lime;">& </span>';
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += '<span style="color: orange;">= </span>';
-            }
-            if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += '<span style="color: black;">O </span>';
-            }
-            if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += '<span style="color: red;"># </span>';
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-    }
+    movimento()
 })
 
 
 function movimento() {
     var paredeAtualizacao = ""
-    //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 30; i++) {
         for (j = 0; j < 30; j++) {
@@ -352,35 +322,7 @@ function movimento() {
 function chavePorta(i, j) {
     mapa[i][j] = 5
     this.document.getElementById("parede").innerHTML = ""
-    for (i = 0; i < 30; i++) {
-        for (j = 0; j < 30; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-            if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
-            }
-            if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-
-    }
+    movimento()
 }
 
 function botao1(contagem) {
@@ -464,12 +406,6 @@ function continuarBotaoCMenos() {
 function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 6
     bonecoL--
-    mapa[bonecoL][bonecoC] = 4
-    movimento()
-}
-function continuarBotaoLMenos() {
-    mapa[bonecoL][bonecoC] = 6
-    bonecoL++
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
