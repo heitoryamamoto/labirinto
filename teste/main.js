@@ -467,6 +467,12 @@ function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
+function continuarBotaoLMenos() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
 function continuarPortaLMais() {
     mapa[bonecoL][bonecoC] = 5
     bonecoL++
