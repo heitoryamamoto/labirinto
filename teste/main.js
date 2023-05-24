@@ -33,8 +33,8 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
-var bonecoL = 7
-var bonecoC = 7
+var bonecoL = 13
+var bonecoC = 9
 var chaveL = 11
 var chaveC = 10
 var vida = 0
@@ -72,6 +72,12 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveCMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][12]) {
+            continuarBotaoCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[13][8]) {
+            continuarBotaoCMais()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
@@ -107,7 +113,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveCMenos()
         }
-
         else {
 
             mapa[bonecoL][bonecoC] = 0
@@ -142,6 +147,9 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[13][8]) {
+            continuarBotaoLMenos()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -407,6 +415,24 @@ function continuarChaveLMais() {
 }
 function continuarChaveLMenos() {
     mapa[bonecoL][bonecoC] = 3
+    bonecoL--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoCMais() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoCMenos() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoLMenos() {
+    mapa[bonecoL][bonecoC] = 6
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     movimento()
