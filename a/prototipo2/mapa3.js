@@ -68,7 +68,7 @@ var chaveC = 10
 var vida = 0
 var tmp
 
-tmp = setInterval(movimento, 20)
+
 
 window.addEventListener("keydown", function andar(oi) {
     var tecla = oi.keyCode
@@ -115,39 +115,40 @@ function moverDireita(params) {
     mapa[bonecoL][bonecoC] = 0
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
+    movimento()
 }
 
 function movimento() {
-
+    var paredeAtualizacao = ""
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 60; i++) {
         for (j = 0; j < 60; j++) {
             if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
+                paredeAtualizacao += "  "
             }
             if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
+                paredeAtualizacao += "* "
             }
             if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
+                paredeAtualizacao += '<span style="color: yellow;">D </span>';
             }
             if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
+                paredeAtualizacao += '<span style="color: deeppink;">@ </span>';
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
+                paredeAtualizacao += '<span style="color: lime;">& </span>';
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
+                paredeAtualizacao += '<span style="color: orange;">= </span>';
             }
             if (mapa[i][j] == 6) {
-                document.getElementById("parede").innerHTML += "<font color=black>" + "O "
+                paredeAtualizacao += '<span style="color: black;">O </span>';
             }
             if (mapa[i][j] == 7) {
-                document.getElementById("parede").innerHTML += "<font color=red>" + "# "
+                paredeAtualizacao += '<span style="color: red;"># </span>';
             }
-        } document.getElementById("parede").innerHTML += "<br>"
+        } paredeAtualizacao += "<br>"
     }
-
+    document.getElementById("parede").innerHTML = paredeAtualizacao
 }
