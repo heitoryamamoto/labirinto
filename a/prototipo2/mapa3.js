@@ -189,6 +189,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveLMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
+            continuarTpLMenos()
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -425,13 +428,13 @@ function continuarTpCMenos() {
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
-function continuarTpMenos() {
+function continuarTpLMenos() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
-function continuarTpLMenos() {
+function continuarTpLMais() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
