@@ -339,7 +339,9 @@ function morte(params) {
     bonecoL = 7
     bonecoC = 7
     mapa[bonecoL][bonecoC] = 4
-    mapa[6][5] = 3
+    if (mapa[4][1] == 2) {
+        mapa[6][5] = 3
+    }
     movimento()
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
