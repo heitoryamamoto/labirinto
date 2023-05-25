@@ -104,7 +104,7 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMais()
-            
+
         }
         else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
             continuarTpCMais()
@@ -147,7 +147,7 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMenos()
-            
+
         }
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             continuarTpCMenos()
@@ -353,7 +353,13 @@ function morte(params) {
     bonecoL = 7
     bonecoC = 7
     mapa[bonecoL][bonecoC] = 4
+<<<<<<< HEAD
     mapa[6][5] = 3
+=======
+    if (mapa[4][1] == 2) {
+        mapa[6][5] = 3
+    }
+>>>>>>> 074befacda727fa40e54e07fd1bae686ddb8fa5b
     movimento()
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
