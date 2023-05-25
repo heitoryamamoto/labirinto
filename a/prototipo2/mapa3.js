@@ -135,9 +135,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[35][1]) {
             continuarTpCMais()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
-            continuarTpCMais()
-        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
@@ -198,9 +195,6 @@ function teclaBaixo(event) {
             continuarTpCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
-            continuarTpCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
             continuarTpCMenos()
         }
         else {
@@ -265,9 +259,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[35][1]) {
             continuarTpLMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
-            continuarTpLMenos()
-        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -317,9 +308,6 @@ function teclaBaixo(event) {
             continuarPortaLMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
-            continuarTpLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
             continuarTpLMais()
         }
         else {
