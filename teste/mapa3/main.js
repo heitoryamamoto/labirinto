@@ -26,11 +26,11 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 8, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8, 0, 0, 1, 0, 1, 0, 0, 9, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 7, 7, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 7, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 7, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8, 0, 0, 1, 0, 0, 0, 0, 9, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 7, 7, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 7, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 7, 0, 7, 0, 7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 6, 0, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 1, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 7, 7, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 7, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 9, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 7, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1],
@@ -69,6 +69,7 @@ var vida = 0
 var tmp
 var vidaextra1 = 0
 var vidaextra2 = 0
+var contadorExtra = 0
 
 
 
@@ -364,17 +365,18 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
             teleporte(11, 24, 16, 30)
-        }if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0){
-            
-            document.getElementById("vidaextra1").src="imagem/vida.png"
+        }
+
+        if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
+            vida--
+            document.getElementById("vidaextra1").src = "imagem/vida.png"
             vidaextra1++
-            
-        }if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0){
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
             console.log(vida)
-            
-            document.getElementById("vidaextra2").src="imagem/vida.png"
+            vida--
+            document.getElementById("vidaextra2").src = "imagem/vida.png"
             vidaextra2++
-            
         }
     }
 }
@@ -417,7 +419,7 @@ function movimento() {
             }
             if (mapa[i][j] == 8) {
                 paredeAtualizacao += '<span style="color: aqua;">> </span>';
-            }if (mapa[i][j] == 9){
+            } if (mapa[i][j] == 9) {
                 paredeAtualizacao += '<span style="color: #37053b;">$ </span>';
             }
         } paredeAtualizacao += "<br>"
@@ -454,7 +456,9 @@ function continuarChaveLMenos() {
     movimento()
 }
 function morte(params) {
+
     vida++
+    console.log(vida)
     mapa[bonecoL][bonecoC] = 0
     bonecoL = 27
     bonecoC = 20
@@ -467,39 +471,28 @@ function morte(params) {
         mapa[11][18] = 3
     }
     movimento()
+
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
     }
     else if (vida == 2) {
         this.document.getElementById("vida2").src = ""
     }
-    else if (vida == 3 && vidaextra1 == 0 && vidaextra2 == 0) {
-        alert("a")
+    else if (vida == 3) {
         this.document.getElementById("vida1").src = ""
         window.location.replace("gameover.html")
     }
-    else if (vida == 3 && vidaextra1 == 1 && vidaextra2 == 1) {
-        alert("b")
-        this.document.getElementById("vida1").src = ""
-        window.location.replace("gameover.html")
-    }
-    else if (vida == 4 && vidaextra1 == 1 || vidaextra2 == 1) {
-        alert("c")
-        this.document.getElementById("vida1").src = ""
-        window.location.replace("gameover.html")
-    }
-    else if (vida == 5 && vidaextra1 == 1 || vidaextra2 == 1) {
-        alert("d")
-        this.document.getElementById("vida1").src = ""
-        window.location.replace("gameover.html")
-    }
-    else if(vidaextra1 == 1 ){
+    if (vidaextra1 == 1 && contadorExtra == 0) {
         this.document.getElementById("vidaextra1").src = ""
+        contadorExtra++
     }
-    else if(vidaextra2 == 1 ){
+    else if (vidaextra2 == 1) {
         this.document.getElementById("vidaextra2").src = ""
-        
     }
+
+
+
+
 }
 function botao1(contagem) {
 
