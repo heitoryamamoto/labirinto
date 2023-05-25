@@ -48,7 +48,7 @@ function teclaBaixo(event) {
     if (tecla == "68") {
         // COLISAO
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
-            mapa[bonecoL][bonecoC] = 4
+            colisao()
         }
         //MORTE 
         else if (mapa[bonecoL][bonecoC + 1] == 7) {
@@ -102,7 +102,7 @@ function teclaBaixo(event) {
     if (tecla == "65") {
         //COLISAO
         if (mapa[bonecoL][bonecoC - 1] == 1 || mapa[bonecoL][bonecoC - 1] == 2) {
-            mapa[bonecoL][bonecoC] = 4
+            colisao()
         }
         //MORTE 
         else if (mapa[bonecoL][bonecoC - 1] == 7) {
@@ -152,7 +152,7 @@ function teclaBaixo(event) {
     if (tecla == "87") {
         //COLISAO
         if (mapa[bonecoL - 1][bonecoC] == 1 || mapa[bonecoL - 1][bonecoC] == 2) {
-            mapa[bonecoL][bonecoC] = 4
+            colisao()
         }
         //MORTE
         else if (mapa[bonecoL - 1][bonecoC] == 7) {
@@ -212,7 +212,7 @@ function teclaBaixo(event) {
     if (tecla == "83") {
         //COLISAO
         if (mapa[bonecoL + 1][bonecoC] == 1 || mapa[bonecoL + 1][bonecoC] == 2) {
-            mapa[bonecoL][bonecoC] = 4
+            colisao()
         }
         //MORTE
         else if (mapa[bonecoL + 1][bonecoC] == 7) {
@@ -400,6 +400,11 @@ function morte(params) {
         this.document.getElementById("vida1").src = ""
         window.location.replace("gameover.html")
     }
+}
+// IMPRIMIR A COLISAO
+function colisao() {
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
 }
 // MANTER CHAVE TECLA "D"
 function continuarChaveCMais() {
