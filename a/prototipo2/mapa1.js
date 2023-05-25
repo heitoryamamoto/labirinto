@@ -133,7 +133,7 @@ function movimento() {
                 mapaAtualizacao += "  "
             }
             if (mapa[i][j] == 1) {
-                mapaAtualizacao += "* "
+                mapaAtualizacao += "* ";
             }
             if (mapa[i][j] == 2) {
                 mapaAtualizacao += '<span style="color: yellow;">D </span>';
