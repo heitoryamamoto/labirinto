@@ -189,6 +189,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveLMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[11][18] && mapa[1][20] == 2) {
+            continuarChaveLMenos()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             continuarTpLMenos()
         }
@@ -254,6 +257,9 @@ function teclaBaixo(event) {
         }
         if (mapa[bonecoL][bonecoC] == mapa[23][24]) {
             chavePorta(26, 24)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[11][18]) {
+            chavePorta(1, 20)
         }
         if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 0) {
             botao1(1)
@@ -358,6 +364,9 @@ function morte(params) {
     mapa[bonecoL][bonecoC] = 4
     if (mapa[4][1] == 2) {
         mapa[6][5] = 3
+    }
+    if (mapa[1][20] == 2) {
+        mapa[11][18] = 3
     }
     movimento()
     if (vida == 1) {
