@@ -102,6 +102,10 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveCMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
+            continuarBotaoCMais()
+            
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
@@ -136,6 +140,10 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
+            continuarBotaoCMenos()
+            
         }
 
         else {
@@ -375,5 +383,29 @@ function botao1(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[8][14] = contagem
     
+    movimento()
+}
+function continuarBotaoCMais() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoCMenos() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoLMenos() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoL--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarBotaoLMenos() {
+    mapa[bonecoL][bonecoC] = 6
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
     movimento()
 }
