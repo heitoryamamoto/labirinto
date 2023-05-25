@@ -489,10 +489,6 @@ function morte(params) {
     else if (vidaextra2 == 1) {
         this.document.getElementById("vidaextra2").src = ""
     }
-
-
-
-
 }
 function botao1(contagem) {
 
