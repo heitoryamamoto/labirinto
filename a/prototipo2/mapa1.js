@@ -23,28 +23,7 @@ var bonecoC = 7
 
 // CARREGAR A PÁGINA COM O MAPA
 window.onload = (function iniciarMapa() {
-    for (i = 0; i < 15; i++) {
-        for (j = 0; j < 15; j++) {
-            if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
-            }
-            if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
-            }
-            if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
-            }
-            if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
-            }
-            if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
-            }
-            if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
-            }
-        } document.getElementById("parede").innerHTML += "<br>"
-    }
+    movimento()
 })
 
 // ADICIONANDO O EVENTO DE DESCER TECLA
@@ -56,32 +35,19 @@ function andar(teste) {
 
     if (tecla == "68") {
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            colisao()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[11][2] && mapa[10][10] == 0) {
-            mapa[bonecoL][bonecoC] = 5
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterPortaCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[2][9] && mapa[5][8] == 0) {
-            mapa[bonecoL][bonecoC] = 5
-            bonecoC++
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterPortaCMais()
             window.location.replace("mapa2.html")
         }
         else {
@@ -94,8 +60,7 @@ function andar(teste) {
     }
     if (tecla == "65") {
         if (mapa[bonecoL][bonecoC - 1] == 1 || mapa[bonecoL][bonecoC - 1] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            colisao()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[2][9] == 5) {
             mapa[bonecoL][bonecoC] = 0
@@ -104,28 +69,16 @@ function andar(teste) {
             movimento()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][8] && mapa[2][9] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[11][2] && mapa[10][10] == 0) {
-            mapa[bonecoL][bonecoC] = 5
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterPortaCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[2][9] && mapa[5][8] == 0) {
-            mapa[bonecoL][bonecoC] = 5
-            bonecoC--
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterPortaCMenos()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -136,14 +89,10 @@ function andar(teste) {
     }
     if (tecla == "87") {
         if (mapa[bonecoL - 1][bonecoC] == 1 || mapa[bonecoL - 1][bonecoC] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            colisao()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoL--
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveLMenos()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -154,14 +103,10 @@ function andar(teste) {
     }
     if (tecla == "83") {
         if (mapa[bonecoL + 1][bonecoC] == 1 || mapa[bonecoL + 1][bonecoC] == 2) {
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            colisao()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[10][10] && mapa[11][2] == 2) {
-            mapa[bonecoL][bonecoC] = 3
-            bonecoL++
-            mapa[bonecoL][bonecoC] = 4
-            movimento()
+            manterChaveLMais()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -180,29 +125,31 @@ function andar(teste) {
 
 // IMPRIMIR MOVIMENTO
 function movimento() {
+    var mapaAtualizacao = ""
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
             if (mapa[i][j] == 0) {
-                document.getElementById("parede").innerHTML += "  "
+                mapaAtualizacao += "  "
             }
             if (mapa[i][j] == 1) {
-                document.getElementById("parede").innerHTML += "* "
+                mapaAtualizacao += "* "
             }
             if (mapa[i][j] == 2) {
-                document.getElementById("parede").innerHTML += "<font color=yellow>" + "D "
+                mapaAtualizacao += '<span style="color: yellow;">D </span>';
             }
             if (mapa[i][j] == 3) {
-                document.getElementById("parede").innerHTML += "<font color=deeppink>" + "@ "
+                mapaAtualizacao += '<span style="color: deeppink;">@ </span>';
             }
             if (mapa[i][j] == 4) {
-                document.getElementById("parede").innerHTML += "<font color=lime>" + "& "
+                mapaAtualizacao += '<span style="color: lime;">& </span>';
             }
             if (mapa[i][j] == 5) {
-                document.getElementById("parede").innerHTML += "<font color=orange>" + "= "
+                mapaAtualizacao += '<span style="color: orange;">= </span>';
             }
-        } document.getElementById("parede").innerHTML += "<br>"
+        } mapaAtualizacao += "<br>"
     }
+    document.getElementById("parede").innerHTML = mapaAtualizacao
 }
 
 // ABRIR PORTA 1
@@ -217,5 +164,45 @@ function chavePorta2() {
     // TROCAR PORTA FECHADA POR ABERTA
     mapa[2][9] = 5
     // IMPRIMIR MAPA
+    movimento()
+}
+function colisao(params) {
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterChaveCMais(params) {
+    mapa[bonecoL][bonecoC] = 3
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterChaveCMenos(params) {
+    mapa[bonecoL][bonecoC] = 3
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterChaveLMais(params) {
+    mapa[bonecoL][bonecoC] = 3
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterChaveLMenos(params) {
+    mapa[bonecoL][bonecoC] = 3
+    bonecoL--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterPortaCMais(params) {
+    mapa[bonecoL][bonecoC] = 5
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function manterPortaCMenos(params) {
+    mapa[bonecoL][bonecoC] = 5
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
     movimento()
 }
