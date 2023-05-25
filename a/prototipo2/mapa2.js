@@ -314,37 +314,37 @@ window.onload = (function iniciarMapa() {
 //ATUALIZAO DE MAPA COM AS AÇÕES 
 // 0=NADA , 1=PAREDE , 2=PORTA FECHADA , 3=CHAVE , 4=BONECO , 5=PORTA ABERTA , 6=BOTÃO , 7=ESPINHO
 function movimento() {
-    var paredeAtualizacao = ""
+    var mapaAtualizacao = ""
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 30; i++) {
         for (j = 0; j < 30; j++) {
             if (mapa[i][j] == 0) {
-                paredeAtualizacao += "  "
+                mapaAtualizacao += "  "
             }
             if (mapa[i][j] == 1) {
-                paredeAtualizacao += "* "
+                mapaAtualizacao += "* "
             }
             if (mapa[i][j] == 2) {
-                paredeAtualizacao += '<span style="color: yellow;">D </span>';
+                mapaAtualizacao += '<span style="color: yellow;">D </span>';
             }
             if (mapa[i][j] == 3) {
-                paredeAtualizacao += '<span style="color: deeppink;">@ </span>';
+                mapaAtualizacao += '<span style="color: deeppink;">@ </span>';
             }
             if (mapa[i][j] == 4) {
-                paredeAtualizacao += '<span style="color: lime;">& </span>';
+                mapaAtualizacao += '<span style="color: lime;">& </span>';
             }
             if (mapa[i][j] == 5) {
-                paredeAtualizacao += '<span style="color: orange;">= </span>';
+                mapaAtualizacao += '<span style="color: orange;">= </span>';
             }
             if (mapa[i][j] == 6) {
-                paredeAtualizacao += '<span style="color: black;">O </span>';
+                mapaAtualizacao += '<span style="color: black;">O </span>';
             }
             if (mapa[i][j] == 7) {
-                paredeAtualizacao += '<span style="color: red;"># </span>';
+                mapaAtualizacao += '<span style="color: red;"># </span>';
             }
-        } paredeAtualizacao += "<br>"
+        } mapaAtualizacao += "<br>"
     }
-    document.getElementById("parede").innerHTML = paredeAtualizacao
+    document.getElementById("parede").innerHTML = mapaAtualizacao
 }
 // IMPRIMIR NO MAPA A PORTA
 function chavePorta(i, j) {
