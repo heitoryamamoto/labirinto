@@ -284,7 +284,7 @@ function teclaBaixo(event) {
         if (mapa[bonecoL][bonecoC] == mapa[11][24]) {
             teleporte2()
         }
-        if (mapa[bonecoL][bonecoC] == mapa[16][3]) {
+        else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
             teleporte2Volta()
         }
     }
