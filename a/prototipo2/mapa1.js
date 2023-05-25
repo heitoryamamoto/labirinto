@@ -139,10 +139,10 @@ function movimento() {
                 mapaAtualizacao += '<span style="color: yellow;">D </span>';
             }
             if (mapa[i][j] == 3) {
-                mapaAtualizacao += '<span style="color: deeppink;">@ </span>';
+                mapaAtualizacao += '<span style="color: deeppink; text-shadow: 1px 1px 5px deeppink">@ </span>';
             }
             if (mapa[i][j] == 4) {
-                mapaAtualizacao += '<span style="color: lime;">& </span>';
+                mapaAtualizacao += '<span style="color: lime;text-shadow: 1px 1px 5px lime ">& </span>';
             }
             if (mapa[i][j] == 5) {
                 mapaAtualizacao += '<span style="color: orange;">= </span>';
