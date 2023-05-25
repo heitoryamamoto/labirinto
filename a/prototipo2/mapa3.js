@@ -106,6 +106,10 @@ function teclaBaixo(event) {
             continuarBotaoCMais()
             
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
+            continuarTpCMais()
+            
+        }
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
@@ -143,6 +147,10 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMenos()
+            
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
+            continuarTpCMenos()
             
         }
 
@@ -257,6 +265,12 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[13][8] && mapa[5][19] == 0) {
             botao2(1)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
+            teleporte1()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
+            teleporte1Volta()
         }
     }
 }
@@ -379,6 +393,44 @@ function continuarBotaoLMenos() {
 }
 function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 6
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function teleporte1(teste) {
+    bonecoL = 1
+    bonecoC = 11
+    mapa[11][15] = 8
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function teleporte1Volta(params) {
+    bonecoL = 11
+    bonecoC = 15
+    mapa[1][11] = 8
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarTpCMais() {
+    mapa[bonecoL][bonecoC] = 8
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarTpCMenos() {
+    mapa[bonecoL][bonecoC] = 8
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarTpMenos() {
+    mapa[bonecoL][bonecoC] = 8
+    bonecoL--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarTpLMenos() {
+    mapa[bonecoL][bonecoC] = 8
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     movimento()
