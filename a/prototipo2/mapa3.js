@@ -234,7 +234,7 @@ function teclaBaixo(event) {
             mapa[bonecoL][bonecoC] = 4
             movimento()
         }
-
+a
     }
     if (tecla == "73") {
         if (mapa[bonecoL][bonecoC] == mapa[6][5]) {
