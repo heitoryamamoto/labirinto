@@ -299,16 +299,16 @@ function teclaBaixo(event) {
             botao2(1)
         }
         if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
-            teleporte1()
+            teleporte(1, 11, 11, 15)
         }
         else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
-            teleporte1Volta()
+            teleporte(11, 15, 1, 11)
         }
         if (mapa[bonecoL][bonecoC] == mapa[11][24]) {
-            teleporte2()
+            teleporte(16, 30, 11, 24)
         }
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
-            teleporte2Volta()
+            teleporte(11, 24, 16, 30)
         }
     }
 }
@@ -441,31 +441,10 @@ function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
-function teleporte1() {
-    bonecoL = 1
-    bonecoC = 11
-    mapa[11][15] = 8
-    mapa[bonecoL][bonecoC] = 4
-    movimento()
-}
-function teleporte1Volta() {
-    bonecoL = 11
-    bonecoC = 15
-    mapa[1][11] = 8
-    mapa[bonecoL][bonecoC] = 4
-    movimento()
-}
-function teleporte2() {
-    bonecoL = 16
-    bonecoC = 30
-    mapa[11][24] = 8
-    mapa[bonecoL][bonecoC] = 4
-    movimento()
-}
-function teleporte2Volta() {
-    bonecoL = 11
-    bonecoC = 24
-    mapa[16][30] = 8
+function teleporte(L, C, i, j) {
+    bonecoL = L
+    bonecoC = C
+    mapa[i][j] = 8
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
