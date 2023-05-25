@@ -26,13 +26,13 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 8, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8, 0, 0, 1, 0, 1, 0, 0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 7, 7, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 7, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8, 0, 0, 1, 0, 1, 0, 0, 9, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 7, 7, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 7, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 7, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 7, 0, 7, 0, 7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 6, 0, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 7, 7, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1],
-    [1, 7, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 6, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 7, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 7, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 9, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 7, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 8, 0, 0, 7, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1],
@@ -62,11 +62,13 @@ var mapa = [
 ]
 
 var bonecoL = 27
-var bonecoC = 13
+var bonecoC = 20
 var chaveL = 11
 var chaveC = 10
 var vida = 0
 var tmp
+var vidaextra1 = 0
+var vidaextra2 = 0
 
 
 
@@ -182,9 +184,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoCMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[27][21]) {
-            continuarBotaoCMenos()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
             continuarBotaoCMenos()
         }
@@ -295,9 +294,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoLMais()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[27][21]) {
-            continuarBotaoLMais()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
             continuarBotaoLMais()
         }
@@ -368,6 +364,17 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
             teleporte(11, 24, 16, 30)
+        }if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0){
+            
+            document.getElementById("vidaextra1").src="imagem/vida.png"
+            vidaextra1++
+            
+        }if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0){
+            console.log(vida)
+            
+            document.getElementById("vidaextra2").src="imagem/vida.png"
+            vidaextra2++
+            
         }
     }
 }
@@ -410,6 +417,8 @@ function movimento() {
             }
             if (mapa[i][j] == 8) {
                 paredeAtualizacao += '<span style="color: aqua;">> </span>';
+            }if (mapa[i][j] == 9){
+                paredeAtualizacao += '<span style="color: #37053b;">$ </span>';
             }
         } paredeAtualizacao += "<br>"
     }
@@ -447,8 +456,8 @@ function continuarChaveLMenos() {
 function morte(params) {
     vida++
     mapa[bonecoL][bonecoC] = 0
-    bonecoL = 7
-    bonecoC = 7
+    bonecoL = 27
+    bonecoC = 20
     mapa[bonecoL][bonecoC] = 4
     mapa[7][15] = 6
     if (mapa[4][1] == 2) {
@@ -464,9 +473,32 @@ function morte(params) {
     else if (vida == 2) {
         this.document.getElementById("vida2").src = ""
     }
-    else if (vida == 3) {
+    else if (vida == 3 && vidaextra1 == 0 && vidaextra2 == 0) {
+        alert("a")
         this.document.getElementById("vida1").src = ""
         window.location.replace("gameover.html")
+    }
+    else if (vida == 3 && vidaextra1 == 1 && vidaextra2 == 1) {
+        alert("b")
+        this.document.getElementById("vida1").src = ""
+        window.location.replace("gameover.html")
+    }
+    else if (vida == 4 && vidaextra1 == 1 || vidaextra2 == 1) {
+        alert("c")
+        this.document.getElementById("vida1").src = ""
+        window.location.replace("gameover.html")
+    }
+    else if (vida == 5 && vidaextra1 == 1 || vidaextra2 == 1) {
+        alert("d")
+        this.document.getElementById("vida1").src = ""
+        window.location.replace("gameover.html")
+    }
+    else if(vidaextra1 == 1 ){
+        this.document.getElementById("vidaextra1").src = ""
+    }
+    else if(vidaextra2 == 1 ){
+        this.document.getElementById("vidaextra2").src = ""
+        
     }
 }
 function botao1(contagem) {
