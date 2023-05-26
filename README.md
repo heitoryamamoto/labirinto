@@ -19,3 +19,10 @@ Uma luz brilhante e intensa emanou do centro do portal, formando uma esfera resp
 A esfera de luz finalmente atingiu seu limite máximo e, num instante, implodiu em si mesma. O portal encolheu rapidamente até se tornar um pequeno ponto de luz, e então desapareceu completamente. O silêncio pairou sobre o lugar, preenchido apenas pela respiração pesada e acelerada de Robb.
 
 Ele estava preso nesse estranho mundo paralelo, sem saber como voltar para sua realidade normal. A solidão e a incerteza envolviam sua mente, enquanto ele se preparava para enfrentar os desafios desconhecidos que o aguardavam.
+
+## Objetivo
+➠ Escapar do mundo paralelo divido em 3 fases 
+
+## Como Jogar
+➠ TECLAS: W- Mover para cima ; S- Mover para baixo ; A- Mover para esquerda ; D- Mover para direita ; I- Interação com objetos 
+➠ ELEMENTOS DO JOGO: * - Parede ; D- Porta fechada ; = - Porta aberta ; @ - Chave ; & - Boneco ; O - Botão ; < - Portal ; $ - Vida extra ; # - Espinho
