@@ -188,7 +188,7 @@ function teclaBaixo(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
             mapa[bonecoL][bonecoC] = 4
-            movimento()
+            iniciarMapa()
         }
     }
     if (tecla == "65") {
@@ -302,7 +302,7 @@ function teclaBaixo(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
             mapa[bonecoL][bonecoC] = 4
-            movimento()
+            iniciarMapa()
         }
     }
 
@@ -408,7 +408,7 @@ function teclaBaixo(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
             mapa[bonecoL][bonecoC] = 4
-            movimento()
+            iniciarMapa()
         }
     }
     if (tecla == "83") {
@@ -496,7 +496,7 @@ function teclaBaixo(event) {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
             mapa[bonecoL][bonecoC] = 4
-            movimento()
+            iniciarMapa()
         }
 
     }
@@ -642,12 +642,12 @@ function teclaBaixo(event) {
 }
 
 window.onload = (function jogar() {
-    movimento()
+    iniciarMapa()
 })
 
 
 
-function movimento() {
+function iniciarMapa() {
     var paredeAtualizacao = ""
     //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
@@ -690,31 +690,31 @@ function movimento() {
 function chavePorta(i, j) {
     mapa[i][j] = 5
     this.document.getElementById("parede").innerHTML = ""
-    movimento()
+    iniciarMapa()
 }
 function continuarChaveCMais() {
     mapa[bonecoL][bonecoC] = 3
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarChaveCMenos() {
     mapa[bonecoL][bonecoC] = 3
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarChaveLMais() {
     mapa[bonecoL][bonecoC] = 3
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarChaveLMenos() {
     mapa[bonecoL][bonecoC] = 3
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function morte(params) {
 
@@ -737,7 +737,7 @@ function morte(params) {
     if (mapa[28][18] == 2) {
         mapa[22][56] = 3
     }
-    movimento()
+    iniciarMapa()
 
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
@@ -760,19 +760,19 @@ function morte(params) {
 function botao1(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[8][14] = contagem
-    movimento()
+    iniciarMapa()
 }
 function botao2(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[12][30] = contagem
-    movimento()
+    iniciarMapa()
 }
 function botao3(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[11][55] = contagem
     mapa[10][54] = contagem
     mapa[9][53] = contagem
-    movimento()
+    iniciarMapa()
 }
 function botao4(contagem) {
     document.getElementById("parede").innerHTML = ""
@@ -790,7 +790,7 @@ function botao4(contagem) {
     mapa[31][36] = contagem
     mapa[32][35] = contagem
     mapa[33][34] = contagem
-    movimento()
+    iniciarMapa()
 }
 function botao5(contagem) {
     document.getElementById("parede").innerHTML = ""
@@ -814,113 +814,113 @@ function botao5(contagem) {
     mapa[45][22] = contagem
     mapa[46][22] = contagem
     mapa[47][22] = contagem
-    movimento()
+    iniciarMapa()
 }
 function botao6(contagem) {
     mapa[58][3] = contagem
     mapa[58][48] = contagem
-    movimento()
+    iniciarMapa()
 }
 function continuarBotaoCMais() {
     mapa[bonecoL][bonecoC] = 6
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarBotaoCMenos() {
     mapa[bonecoL][bonecoC] = 6
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 6
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarBotaoLMais() {
     mapa[bonecoL][bonecoC] = 6
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function teleporte(L, C, i, j) {
     bonecoL = L
     bonecoC = C
     mapa[i][j] = 8
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarTpCMais() {
     mapa[bonecoL][bonecoC] = 8
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarTpCMenos() {
     mapa[bonecoL][bonecoC] = 8
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarTpLMenos() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarTpLMais() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarPortaLMais() {
     mapa[bonecoL][bonecoC] = 5
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarPortaLMenos() {
     mapa[bonecoL][bonecoC] = 5
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarPortaCMais() {
     mapa[bonecoL][bonecoC] = 5
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarPortaCMenos() {
     mapa[bonecoL][bonecoC] = 5
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarVidaCMais(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarVidaCMenos(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarVidaLMais(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
 function continuarVidaLMenos(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
-    movimento()
+    iniciarMapa()
 }
