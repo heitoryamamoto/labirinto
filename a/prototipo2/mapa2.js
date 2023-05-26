@@ -137,6 +137,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[12][12] && mapa[3][20] == 0) {
             continuarPortaCMenos()
         }
+        //BOTAO NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[25][6]) {
             continuarBotaoCMenos()
         }
