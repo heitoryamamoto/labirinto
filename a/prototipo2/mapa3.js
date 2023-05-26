@@ -76,30 +76,10 @@ function teclaBaixo(event) {
     if (tecla == "68") {
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
+
         }
         else if (mapa[bonecoL][bonecoC + 1] == 7) {
             morte()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[3][20] && mapa[12][12] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][3] && mapa[26][3] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][14] && mapa[26][14] == 2) {
-            continuarChaveCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
-            continuarChaveCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[3][30] && mapa[3][35] == 2) {
             continuarChaveCMais()
@@ -138,7 +118,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMais()
         }
-
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoCMais()
         }
@@ -199,24 +178,6 @@ function teclaBaixo(event) {
             morte()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[3][20] && mapa[12][12] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][3] && mapa[26][3] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][14] && mapa[26][14] == 2) {
-            continuarChaveCMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
             continuarChaveCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[3][30] && mapa[3][35] == 2) {
@@ -317,21 +278,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
             continuarChaveLMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[12][20] && mapa[8][20] == 2) {
-            continuarChaveLMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2) {
-            continuarChaveLMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][3] && mapa[26][3] == 2) {
-            continuarChaveLMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][14] && mapa[26][14] == 2) {
-            continuarChaveLMenos()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
-            continuarChaveLMenos()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[11][18] && mapa[1][20] == 2) {
             continuarChaveLMenos()
         }
@@ -419,24 +365,6 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL + 1][bonecoC] == 7) {
             morte()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[2][27] && mapa[8][28] == 2) {
-            continuarChaveLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[6][20] && mapa[9][11] == 2) {
-            continuarChaveLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[3][20] && mapa[12][12] == 2) {
-            continuarChaveLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][3] && mapa[26][3] == 2) {
-            continuarChaveLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][14] && mapa[26][14] == 2) {
-            continuarChaveLMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[23][24] && mapa[26][24] == 2) {
-            continuarChaveLMais()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[3][30] && mapa[3][35] == 2) {
             continuarChaveLMais()
         }
@@ -504,23 +432,8 @@ function teclaBaixo(event) {
         if (mapa[bonecoL][bonecoC] == mapa[6][5]) {
             chavePorta(4, 1)
         }
-        if (mapa[bonecoL][bonecoC] == mapa[12][20]) {
-            chavePorta(8, 20)
-        }
-        if (mapa[bonecoL][bonecoC] == mapa[6][20]) {
-            chavePorta(9, 11)
-        }
         if (mapa[bonecoL][bonecoC] == mapa[3][20]) {
             chavePorta(12, 12)
-        }
-        if (mapa[bonecoL][bonecoC] == mapa[23][3]) {
-            chavePorta(26, 3)
-        }
-        if (mapa[bonecoL][bonecoC] == mapa[23][14]) {
-            chavePorta(26, 14)
-        }
-        if (mapa[bonecoL][bonecoC] == mapa[23][24]) {
-            chavePorta(26, 24)
         }
         if (mapa[bonecoL][bonecoC] == mapa[11][18]) {
             chavePorta(1, 20)
@@ -548,25 +461,21 @@ function teclaBaixo(event) {
         }
         if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 0) {
             botao1(1)
-
         }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 1) {
             botao1(0)
         }
         if (mapa[bonecoL][bonecoC] == mapa[13][30] && mapa[12][30] == 1) {
             botao2(0)
-
         }
         else if (mapa[bonecoL][bonecoC] == mapa[13][30] && mapa[12][30] == 0) {
             botao2(1)
         }
         if (mapa[bonecoL][bonecoC] == mapa[5][56] && mapa[11][55] == 1) {
             botao3(0)
-
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][56] && mapa[11][55] == 0) {
             botao3(1)
-
         }
         if (mapa[bonecoL][bonecoC] == mapa[30][32] && mapa[27][34] == 1) {
             botao4(0)
@@ -646,10 +555,8 @@ window.onload = (function jogar() {
 })
 
 
-
 function iniciarMapa() {
     var paredeAtualizacao = ""
-    //0=nada,1=Parede, 2=Porta Fechada, 3=Porta2 Fechada, 4=Chave1 ,5=Boneco, 6=Chave2
     this.document.getElementById("parede").innerHTML = ""
     for (i = 0; i < 60; i++) {
         for (j = 0; j < 60; j++) {
@@ -717,14 +624,11 @@ function continuarChaveLMenos() {
     iniciarMapa()
 }
 function morte(params) {
-
     vida++
-    console.log(vida)
     mapa[bonecoL][bonecoC] = 0
     bonecoL = 7
     bonecoC = 7
     mapa[bonecoL][bonecoC] = 4
-    mapa[7][15] = 6
     if (mapa[4][1] == 2) {
         mapa[6][5] = 3
     }
