@@ -1,3 +1,4 @@
+// IMPRIMIR MAPA
 var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 0, 7, 7, 7, 7, 7, 7, 1, 8, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
@@ -61,26 +62,33 @@ var mapa = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
+//POSICAO DO BONECO
 var bonecoL = 7
 var bonecoC = 7
+// CONTADOR DE VIDA
 var vida = 0
+// CONTADORES DE VIDA EXTRA
 var vidaextra1 = 0
 var vidaextra2 = 0
 var contadorExtra = 0
 
-
+// EVENTO DE DESCER A TECLA
 window.addEventListener("keydown", teclaBaixo)
 
 function teclaBaixo(event) {
+    // ARMAZENAR A TECLA NA VARIAVEL
     var tecla = event.keyCode
+    // TECLA "D"
     if (tecla == "68") {
+        // COLISAO
         if (mapa[bonecoL][bonecoC + 1] == 1 || mapa[bonecoL][bonecoC + 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
-
         }
+        // MORTE
         else if (mapa[bonecoL][bonecoC + 1] == 7) {
             morte()
         }
+        // CHAVE NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[3][30] && mapa[3][35] == 2) {
             continuarChaveCMais()
         }
@@ -93,6 +101,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
             continuarChaveCMais()
         }
+        // PORTA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[1][20] && mapa[11][18] == 0) {
             continuarPortaCMais()
         }
@@ -115,6 +124,7 @@ function teclaBaixo(event) {
             continuarPortaCMais()
             window.location.replace("vitoria.html")
         }
+        // BOTAO NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMais()
         }
@@ -133,6 +143,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoCMais()
         }
+        // PORTAL NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
             continuarTpCMais()
         }
@@ -160,9 +171,11 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
             continuarTpCMais()
         }
+        // VIDA EXTRA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
             continuarVidaCMais()
         }
+        // MOVIMENTO DO BONECO
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoC++
@@ -170,13 +183,17 @@ function teclaBaixo(event) {
             iniciarMapa()
         }
     }
+    // TECLA "A"
     if (tecla == "65") {
+        // COLISAO
         if (mapa[bonecoL][bonecoC - 1] == 1 || mapa[bonecoL][bonecoC - 1] == 2) {
             mapa[bonecoL][bonecoC] = 4
         }
+        // MORTE
         else if (mapa[bonecoL][bonecoC - 1] == 7) {
             morte()
         }
+        // CHAVE NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
             continuarChaveCMenos()
         }
@@ -195,6 +212,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
             continuarChaveCMenos()
         }
+        // PORTA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[1][20] && mapa[11][18] == 0) {
             continuarPortaCMenos()
         }
@@ -210,6 +228,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[56][49] && mapa[56][47] == 0) {
             continuarPortaCMenos()
         }
+        // BOTAO NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMenos()
         }
@@ -228,6 +247,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoCMenos()
         }
+        // PORTAL NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             continuarTpCMenos()
         }
@@ -255,26 +275,29 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
             continuarTpCMenos()
         }
+        // VIDA EXTRA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
             continuarVidaCMenos()
         }
+        // MOVIMENTO DO BONECO
         else {
-
             mapa[bonecoL][bonecoC] = 0
             bonecoC--
             mapa[bonecoL][bonecoC] = 4
             iniciarMapa()
         }
     }
-
+    // TECLA "W"
     if (tecla == "87") {
+        // COLISAO
         if (mapa[bonecoL - 1][bonecoC] == 1 || mapa[bonecoL - 1][bonecoC] == 2) {
             mapa[bonecoL][bonecoC] = 4
-
         }
+        // MORTE
         else if (mapa[bonecoL - 1][bonecoC] == 7) {
             morte()
         }
+        // CHAVE NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[6][5] && mapa[4][1] == 2) {
             continuarChaveLMenos()
         }
@@ -293,6 +316,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
             continuarChaveLMenos()
         }
+        // BOTAO NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoLMenos()
         }
@@ -308,6 +332,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoLMenos()
         }
+        // PORTA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[4][1] && mapa[6][5] == 0) {
             continuarPortaLMenos()
         }
@@ -317,6 +342,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[43][43] && mapa[45][12] == 0) {
             continuarPortaLMenos()
         }
+        // PORTAL NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             continuarTpLMenos()
         }
@@ -347,9 +373,11 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
             continuarTpLMenos()
         }
+        // VIDA EXTRA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
             continuarVidaLMenos()
         }
+        // MOVIMENTO DO BONECO
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL--
@@ -357,14 +385,17 @@ function teclaBaixo(event) {
             iniciarMapa()
         }
     }
+    // TECLA "S"
     if (tecla == "83") {
+        // COLISAO
         if (mapa[bonecoL + 1][bonecoC] == 1 || mapa[bonecoL + 1][bonecoC] == 2) {
             mapa[bonecoL][bonecoC] = 4
-
         }
+        // MORTE
         else if (mapa[bonecoL + 1][bonecoC] == 7) {
             morte()
         }
+        // CHAVE NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[3][30] && mapa[3][35] == 2) {
             continuarChaveLMais()
         }
@@ -374,6 +405,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
             continuarChaveLMais()
         }
+        // BOTAO NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoLMais()
         }
@@ -386,6 +418,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoLMais()
         }
+        // PORTA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[4][1] && mapa[6][5] == 0) {
             continuarPortaLMais()
         }
@@ -398,6 +431,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[28][18] && mapa[22][56] == 0) {
             continuarPortaLMais()
         }
+        // PORTAL NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
             continuarTpLMais()
         }
@@ -416,10 +450,11 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
             continuarTpLMais()
         }
-
+        // VIDA EXTRA NAO SUMIR
         else if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
             continuarVidaLMais()
         }
+        // MOVIMENTO DO BONECO
         else {
             mapa[bonecoL][bonecoC] = 0
             bonecoL++
@@ -428,7 +463,9 @@ function teclaBaixo(event) {
         }
 
     }
+    // TELCLA "I"
     if (tecla == "73") {
+        // ABRIR PORTA
         if (mapa[bonecoL][bonecoC] == mapa[6][5]) {
             chavePorta(4, 1)
         }
@@ -459,6 +496,7 @@ function teclaBaixo(event) {
         if (mapa[bonecoL][bonecoC] == mapa[56][47]) {
             chavePorta(56, 49)
         }
+        // LIGAR/DESLIGAR PAREDE
         if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 0) {
             botao1(1)
         }
@@ -489,12 +527,14 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[41][27] && mapa[41][20] == 0) {
             botao5(1)
         }
+        // LIGAR/DESLIGAR PORTAL
         if (mapa[bonecoL][bonecoC] == mapa[57][2] && mapa[58][3] == 0) {
             botao6(8)
         }
         else if (mapa[bonecoL][bonecoC] == mapa[57][2] && mapa[58][3] == 8) {
             botao6(0)
         }
+        // TELETRANSPORTE
         if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             teleporte(1, 11, 11, 15)
         }
@@ -537,6 +577,7 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
             teleporte(58, 3, 58, 48)
         }
+        // ADICIONAR VIDA EXTRA
         if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
             vida--
             document.getElementById("vidaextra1").src = "imagem/vida.png"
@@ -550,11 +591,13 @@ function teclaBaixo(event) {
     }
 }
 
+// CARREGAR O MAPA NA TELA
 window.onload = (function jogar() {
     iniciarMapa()
 })
 
-
+// IMPRIMIR O MAPA
+// 0=NADA , 1=PAREDE , 2=PORTA FECHADA , 3=CHAVE , 4=BONECO , 5=PORTA ABERTA , 6=BOTÃO , 7=ESPINHO, 8=PORTAL, 9=VIDA EXTRA
 function iniciarMapa() {
     var paredeAtualizacao = ""
     this.document.getElementById("parede").innerHTML = ""
@@ -594,35 +637,41 @@ function iniciarMapa() {
     }
     document.getElementById("parede").innerHTML = paredeAtualizacao
 }
+// IMPRIMIR A PORTA NO MAPA
 function chavePorta(i, j) {
     mapa[i][j] = 5
     this.document.getElementById("parede").innerHTML = ""
     iniciarMapa()
 }
+// MANTER CHAVE TECLA "D"
 function continuarChaveCMais() {
     mapa[bonecoL][bonecoC] = 3
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER CHAVE TECLA "A"
 function continuarChaveCMenos() {
     mapa[bonecoL][bonecoC] = 3
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER CHAVE TECLA "W"
 function continuarChaveLMais() {
     mapa[bonecoL][bonecoC] = 3
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MATER CHAVE TECLA "W"
 function continuarChaveLMenos() {
     mapa[bonecoL][bonecoC] = 3
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MORTE DO BONECO
 function morte(params) {
     vida++
     mapa[bonecoL][bonecoC] = 0
@@ -643,6 +692,7 @@ function morte(params) {
     }
     iniciarMapa()
 
+    // CONDICAO DE VIDA DO BONECO
     if (vida == 1) {
         this.document.getElementById("vida3").src = ""
     }
@@ -661,16 +711,19 @@ function morte(params) {
         this.document.getElementById("vidaextra2").src = ""
     }
 }
+// IMPRIMIR NO MAPA A PAREDE LIGANDO/DESLIGANDO
 function botao1(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[8][14] = contagem
     iniciarMapa()
 }
+// IMPRIMIR NO MAPA A PAREDE LIGANDO/DESLIGANDO
 function botao2(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[12][30] = contagem
     iniciarMapa()
 }
+// IMPRIMIR NO MAPA A PAREDE LIGANDO/DESLIGANDO
 function botao3(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[11][55] = contagem
@@ -678,6 +731,7 @@ function botao3(contagem) {
     mapa[9][53] = contagem
     iniciarMapa()
 }
+// IMPRIMIR NO MAPA A PAREDE LIGANDO/DESLIGANDO
 function botao4(contagem) {
     document.getElementById("parede").innerHTML = ""
     mapa[27][34] = contagem
@@ -696,6 +750,7 @@ function botao4(contagem) {
     mapa[33][34] = contagem
     iniciarMapa()
 }
+// IMPRIMIR NO MAPA A PAREDE LIGANDO/DESLIGANDO
 function botao5(contagem) {
     document.getElementById("parede").innerHTML = ""
     if (mapa[41][21] == 0) {
@@ -720,35 +775,41 @@ function botao5(contagem) {
     mapa[47][22] = contagem
     iniciarMapa()
 }
+// IMPRIMIR NO MAPA O PORTAL LIGANDO/DESLIGANDO
 function botao6(contagem) {
     mapa[58][3] = contagem
     mapa[58][48] = contagem
     iniciarMapa()
 }
+// MANTER BOTAO TECLA "D"
 function continuarBotaoCMais() {
     mapa[bonecoL][bonecoC] = 6
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER BOTAO TECLA "A"
 function continuarBotaoCMenos() {
     mapa[bonecoL][bonecoC] = 6
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER BOTAO TECLA "W"
 function continuarBotaoLMenos() {
     mapa[bonecoL][bonecoC] = 6
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER BOTAO TECLA "S"
 function continuarBotaoLMais() {
     mapa[bonecoL][bonecoC] = 6
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// IMPRIMIR O TELETRANSPORTE NO MAPA
 function teleporte(L, C, i, j) {
     bonecoL = L
     bonecoC = C
@@ -756,72 +817,84 @@ function teleporte(L, C, i, j) {
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTAL TECLA "D"
 function continuarTpCMais() {
     mapa[bonecoL][bonecoC] = 8
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTAL TECLA "A"
 function continuarTpCMenos() {
     mapa[bonecoL][bonecoC] = 8
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTAL TECLA "W"
 function continuarTpLMenos() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTAL TECLA "S"
 function continuarTpLMais() {
     mapa[bonecoL][bonecoC] = 8
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTA TECLA "S"
 function continuarPortaLMais() {
     mapa[bonecoL][bonecoC] = 5
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTA TECLA "W"
 function continuarPortaLMenos() {
     mapa[bonecoL][bonecoC] = 5
     bonecoL--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTA TECLA "D"
 function continuarPortaCMais() {
     mapa[bonecoL][bonecoC] = 5
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER PORTA TECLA "A"
 function continuarPortaCMenos() {
     mapa[bonecoL][bonecoC] = 5
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER VIDA EXTRA TECLA "D"
 function continuarVidaCMais(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoC++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER VIDA EXTRA TECLA "A"
 function continuarVidaCMenos(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoC--
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER VIDA EXTRA TECLA "S"
 function continuarVidaLMais(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoL++
     mapa[bonecoL][bonecoC] = 4
     iniciarMapa()
 }
+// MANTER VIDA EXTRA TECLA "W"
 function continuarVidaLMenos(params) {
     mapa[bonecoL][bonecoC] = 9
     bonecoL--
