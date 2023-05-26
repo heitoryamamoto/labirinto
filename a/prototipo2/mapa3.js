@@ -30,8 +30,8 @@ var mapa = [
     [1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 7, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 7, 0, 7, 0, 7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 6, 0, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 1, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 7, 7, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 2, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 7, 7, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 7, 7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 9, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 7, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1],
     [1, 8, 0, 0, 7, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
@@ -53,18 +53,16 @@ var mapa = [
     [1, 7, 0, 7, 1, 0, 7, 0, 0, 0, 0, 7, 7, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 7, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1],
     [1, 0, 0, 0, 1, 0, 0, 0, 0, 7, 0, 0, 7, 1, 7, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 7, 1, 1, 1, 1, 1, 7, 0, 0, 0, 0, 0, 0, 7, 0, 7, 0, 0, 0, 7, 1, 1, 1, 7, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
     [1, 0, 7, 0, 7, 7, 7, 0, 0, 0, 0, 7, 7, 1, 7, 0, 0, 0, 0, 0, 7, 1, 7, 0, 0, 0, 7, 7, 7, 7, 7, 0, 0, 0, 1, 0, 0, 7, 1, 7, 1, 7, 0, 0, 0, 7, 7, 7, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 0, 0, 0, 0, 0, 7, 0, 0, 7, 0, 0, 7, 1, 7, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 7, 1, 7, 1, 7, 1, 7, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
-    [1, 0, 0, 7, 7, 0, 7, 7, 0, 0, 0, 7, 7, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 7, 0, 7, 0, 7, 0, 0, 7, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
-    [1, 7, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 7, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 7, 0, 0, 0, 1, 0, 7, 1, 7, 0, 0, 0, 0, 0, 7, 0, 0, 7, 1, 7, 0, 3, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0, 0, 7, 0, 0, 7, 0, 0, 7, 1, 7, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 7, 1, 7, 1, 7, 1, 7, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 0, 7, 7, 0, 7, 7, 0, 0, 0, 7, 7, 1, 7, 0, 7, 1, 7, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 7, 0, 7, 0, 7, 0, 0, 7, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 7, 0, 0, 7, 0, 0, 0, 0, 7, 0, 0, 7, 1, 7, 0, 0, 7, 0, 0, 0, 0, 0, 0, 7, 1, 7, 0, 0, 0, 1, 0, 7, 1, 7, 0, 0, 0, 0, 0, 7, 0, 0, 7, 1, 7, 0, 3, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
     [1, 0, 6, 0, 7, 7, 7, 7, 0, 0, 7, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 7, 1, 7, 0, 0, 7, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
     [1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
-var bonecoL = 7
-var bonecoC = 7
-var chaveL = 11
-var chaveC = 10
+var bonecoL = 57
+var bonecoC = 2
 var vida = 0
 var vidaextra1 = 0
 var vidaextra2 = 0
@@ -112,6 +110,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[20][2] && mapa[31][15] == 2) {
             continuarChaveCMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
+            continuarChaveCMais()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[1][20] && mapa[11][18] == 0) {
             continuarPortaCMais()
         }
@@ -127,20 +128,30 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[28][18] && mapa[22][56] == 0) {
             continuarPortaCMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[43][43] && mapa[45][12] == 0) {
+            continuarPortaCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[56][49] && mapa[56][47] == 0) {
+            continuarPortaCMais()
+            window.location.replace("vitoria.html")
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMais()
         }
-        
+
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
-            continuarBotaoCMais()
-        }
-        else if (mapa[bonecoL][bonecoC] == mapa[33][13]) {
             continuarBotaoCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
             continuarBotaoCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[13][30]) {
+            continuarBotaoCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][27]) {
+            continuarBotaoCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoCMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[1][11]) {
@@ -160,6 +171,18 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[9][37]) {
             continuarTpCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][52]) {
+            continuarTpCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[42][40]) {
+            continuarTpCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
+            continuarTpCMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
+            continuarVidaCMais()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -208,6 +231,9 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[20][2] && mapa[31][15] == 2) {
             continuarChaveCMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
+            continuarChaveCMenos()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[1][20] && mapa[11][18] == 0) {
             continuarPortaCMenos()
         }
@@ -217,19 +243,28 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[11][42] && mapa[9][49] == 0) {
             continuarPortaCMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[43][43] && mapa[45][12] == 0) {
+            continuarPortaCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[56][49] && mapa[56][47] == 0) {
+            continuarPortaCMenos()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[7][15]) {
             continuarBotaoCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoCMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[27][21]) {
-            continuarBotaoCMenos()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
             continuarBotaoCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[13][30]) {
+            continuarBotaoCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][27]) {
+            continuarBotaoCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoCMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
@@ -241,11 +276,26 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[16][30]) {
             continuarTpCMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
-            continuarTpCMenos()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[9][37]) {
             continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][52]) {
+            continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[42][40]) {
+            continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
+            continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[58][3] && mapa[58][48] == 8) {
+            continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
+            continuarTpCMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
+            continuarVidaCMenos()
         }
         else {
 
@@ -291,10 +341,13 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[20][2] && mapa[31][15] == 2) {
             continuarChaveLMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
-            continuarBotaoLMenos()
+        else if (mapa[bonecoL][bonecoC] == mapa[45][12] && mapa[43][43] == 2) {
+            continuarChaveLMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[33][13]) {
+        else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
+            continuarChaveLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoLMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
@@ -303,10 +356,19 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[13][30]) {
             continuarBotaoLMenos()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][27]) {
+            continuarBotaoLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
+            continuarBotaoLMenos()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[4][1] && mapa[6][5] == 0) {
             continuarPortaLMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[30][6] && mapa[29][5] == 0) {
+            continuarPortaLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[43][43] && mapa[45][12] == 0) {
             continuarPortaLMenos()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
@@ -318,11 +380,29 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[35][1]) {
             continuarTpLMenos()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][17]) {
-            continuarTpLMenos()
-        }
         else if (mapa[bonecoL][bonecoC] == mapa[9][37]) {
             continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][52]) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[42][40]) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[45][27]) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[58][3] && mapa[58][48] == 8) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
+            continuarTpLMenos()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
+            continuarVidaLMenos()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -363,13 +443,19 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[9][49] && mapa[11][42] == 2) {
             continuarChaveLMais()
         }
+        else if (mapa[bonecoL][bonecoC] == mapa[56][47] && mapa[56][49] == 2) {
+            continuarChaveLMais()
+        }
         else if (mapa[bonecoL][bonecoC] == mapa[5][56]) {
             continuarBotaoLMais()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[27][21]) {
+        else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
             continuarBotaoLMais()
         }
-        else if (mapa[bonecoL][bonecoC] == mapa[30][32]) {
+        else if (mapa[bonecoL][bonecoC] == mapa[41][27]) {
+            continuarBotaoLMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[57][2]) {
             continuarBotaoLMais()
         }
         else if (mapa[bonecoL][bonecoC] == mapa[4][1] && mapa[6][5] == 0) {
@@ -392,6 +478,19 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[9][37]) {
             continuarTpLMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][52]) {
+            continuarTpLMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[42][40]) {
+            continuarTpLMais()
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
+            continuarTpLMais()
+        }
+
+        else if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
+            continuarVidaLMais()
         }
         else {
             mapa[bonecoL][bonecoC] = 0
@@ -441,6 +540,12 @@ function teclaBaixo(event) {
         if (mapa[bonecoL][bonecoC] == mapa[20][2]) {
             chavePorta(31, 15)
         }
+        if (mapa[bonecoL][bonecoC] == mapa[45][12]) {
+            chavePorta(43, 43)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[56][47]) {
+            chavePorta(56, 49)
+        }
         if (mapa[bonecoL][bonecoC] == mapa[7][15] && mapa[8][14] == 0) {
             botao1(1)
 
@@ -462,6 +567,24 @@ function teclaBaixo(event) {
         else if (mapa[bonecoL][bonecoC] == mapa[5][56] && mapa[11][55] == 0) {
             botao3(1)
 
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[30][32] && mapa[27][34] == 1) {
+            botao4(0)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[30][32] && mapa[27][34] == 0) {
+            botao4(1)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[41][27] && mapa[41][20] == 1) {
+            botao5(0)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][27] && mapa[41][20] == 0) {
+            botao5(1)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[57][2] && mapa[58][3] == 0) {
+            botao6(8)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[57][2] && mapa[58][3] == 8) {
+            botao6(0)
         }
         if (mapa[bonecoL][bonecoC] == mapa[11][15]) {
             teleporte(1, 11, 11, 15)
@@ -486,6 +609,34 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[27][13]) {
             teleporte(35, 1, 27, 13)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[41][52]) {
+            teleporte(41, 10, 41, 52)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[41][10]) {
+            teleporte(41, 52, 41, 10)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[42][40]) {
+            teleporte(45, 27, 42, 40)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[45][27]) {
+            teleporte(42, 40, 45, 27)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[58][3] && mapa[58][48] == 8) {
+            teleporte(58, 48, 58, 3)
+        }
+        else if (mapa[bonecoL][bonecoC] == mapa[58][48] && mapa[58][3] == 8) {
+            teleporte(58, 3, 58, 48)
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[33][13] && vidaextra1 == 0) {
+            vida--
+            document.getElementById("vidaextra1").src = "imagem/vida.png"
+            vidaextra1++
+        }
+        if (mapa[bonecoL][bonecoC] == mapa[27][21] && vidaextra2 == 0) {
+            vida--
+            document.getElementById("vidaextra2").src = "imagem/vida.png"
+            vidaextra2++
         }
     }
 }
@@ -580,6 +731,9 @@ function morte(params) {
     if (mapa[1][20] == 2) {
         mapa[11][18] = 3
     }
+    if (mapa[11][42] == 2) {
+        mapa[9][49] = 3
+    }
     if (mapa[28][18] == 2) {
         mapa[22][56] = 3
     }
@@ -604,27 +758,67 @@ function morte(params) {
     }
 }
 function botao1(contagem) {
-
     document.getElementById("parede").innerHTML = ""
     mapa[8][14] = contagem
-
     movimento()
 }
 function botao2(contagem) {
-
     document.getElementById("parede").innerHTML = ""
     mapa[12][30] = contagem
-
     movimento()
 }
 function botao3(contagem) {
-
     document.getElementById("parede").innerHTML = ""
     mapa[11][55] = contagem
     mapa[10][54] = contagem
     mapa[9][53] = contagem
-
-
+    movimento()
+}
+function botao4(contagem) {
+    document.getElementById("parede").innerHTML = ""
+    mapa[27][34] = contagem
+    mapa[28][35] = contagem
+    mapa[29][36] = contagem
+    mapa[30][37] = contagem
+    mapa[31][38] = contagem
+    mapa[32][39] = contagem
+    mapa[33][40] = contagem
+    mapa[27][40] = contagem
+    mapa[28][39] = contagem
+    mapa[29][38] = contagem
+    mapa[30][37] = contagem
+    mapa[31][36] = contagem
+    mapa[32][35] = contagem
+    mapa[33][34] = contagem
+    movimento()
+}
+function botao5(contagem) {
+    document.getElementById("parede").innerHTML = ""
+    if (mapa[41][21] == 0) {
+        mapa[42][22] = 0
+        mapa[48][21] = 0
+    }
+    else {
+        mapa[42][22] = 1
+        mapa[48][21] = 1
+    }
+    mapa[41][21] = contagem
+    mapa[41][20] = contagem
+    mapa[42][20] = contagem
+    mapa[43][20] = contagem
+    mapa[44][20] = contagem
+    mapa[45][20] = contagem
+    mapa[46][20] = contagem
+    mapa[47][20] = contagem
+    mapa[44][22] = contagem
+    mapa[45][22] = contagem
+    mapa[46][22] = contagem
+    mapa[47][22] = contagem
+    movimento()
+}
+function botao6(contagem) {
+    mapa[58][3] = contagem
+    mapa[58][48] = contagem
     movimento()
 }
 function continuarBotaoCMais() {
@@ -706,4 +900,27 @@ function continuarPortaCMenos() {
     mapa[bonecoL][bonecoC] = 4
     movimento()
 }
-
+function continuarVidaCMais(params) {
+    mapa[bonecoL][bonecoC] = 9
+    bonecoC++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarVidaCMenos(params) {
+    mapa[bonecoL][bonecoC] = 9
+    bonecoC--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarVidaLMais(params) {
+    mapa[bonecoL][bonecoC] = 9
+    bonecoL++
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
+function continuarVidaLMenos(params) {
+    mapa[bonecoL][bonecoC] = 9
+    bonecoL--
+    mapa[bonecoL][bonecoC] = 4
+    movimento()
+}
