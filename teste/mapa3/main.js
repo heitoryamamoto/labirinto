@@ -62,7 +62,7 @@ var mapa = [
 ]
 
 var bonecoL = 27
-var bonecoC = 20
+var bonecoC = 45
 var chaveL = 11
 var chaveC = 10
 var vida = 0
