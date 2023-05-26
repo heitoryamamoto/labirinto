@@ -252,7 +252,7 @@ function teclaBaixo(event) {
         }
         else if (mapa[bonecoL][bonecoC] == mapa[26][14] && mapa[23][14] == 0) {
             continuarPortaLMais()
-            window.location.replace("fase3.html")
+            window.location.replace("mapa3.html")
         }
         //MOVIMENTO DO BONECO
         else {
